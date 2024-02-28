@@ -39,9 +39,43 @@ Notice that the answer must be a substring, &quot;pwke&quot; is a subsequence an
 	<li><code>s</code> consists of English letters, digits, symbols and spaces.</li>
 </ul>
 
+<br/>
+
 ## Solutions
 
-### Solution 1: Two pointers + Hash Table
+### Solution 1 - Brute Force
+List all substrings from highest length to lowest, and return the first substring without repeating characters.
+<!-- tabs:start -->
+```python
+def lengthLongestNonRepSubstring(s: str) -> int:
+    for l in range (len(s),0,-1):
+	for i in range(len(s)+1-l):  
+	    if l==len(set(s[i:i+l])):
+		return l
+    return 0
+```
+<!-- tabs:end -->
+
+<br/>
+
+### Solution 2
+Solution with good memory complexity but bad time complexity:
+
+<!-- tabs:start -->
+```python
+def lengthLongestNonRepSubstring(s: str) -> int:
+    for l in range (len(s),0,-1):
+	for i in range(len(s)+1-l):  
+	    if l==len(set(s[i:i+l])):
+		return l
+    return 0
+```
+<!-- tabs:end -->
+
+
+<br/>
+
+### Solution 3 - Two pointers + Hash Table
 
 Define a hash table to record the characters in the current window. Let $i$ and $j$ represent the start and end positions of the non-repeating substring, respectively. The length of the longest non-repeating substring is recorded by `ans`.
 
@@ -64,20 +98,22 @@ for (int i = 0, j = 0; i < n; ++i) {
 
 <!-- tabs:start -->
 
+#### Python:
 ```python
 class Solution:
-    def lengthOfLongestSubstring(self, s: str) -> int:
-        ss = set()
-        i = ans = 0
-        for j, c in enumerate(s):
-            while c in ss:
-                ss.remove(s[i])
-                i += 1
-            ss.add(c)
-            ans = max(ans, j - i + 1)
-        return ans
+	def lengthOfLongestSubstring(self, s: str) -> int:
+	ss = set()
+	i = ans = 0
+	for j, c in enumerate(s):
+	    while c in ss:
+		ss.remove(s[i])
+		i += 1
+	    ss.add(c)
+	    ans = max(ans, j - i + 1)
+	return ans
 ```
 
+#### Java:
 ```java
 class Solution {
     public int lengthOfLongestSubstring(String s) {
@@ -95,7 +131,7 @@ class Solution {
     }
 }
 ```
-
+#### C++:
 ```cpp
 class Solution {
 public:
@@ -114,48 +150,64 @@ public:
 
 <!-- tabs:end -->
 
-### Solution 2
+
+<br/>
+
+### Solution 4 - Two-Pointers Solution (Moving Dictionary)
 
 <!-- tabs:start -->
 
-```java
-class Solution {
-    public int lengthOfLongestSubstring(String s) {
-        boolean[] ss = new boolean[128];
-        int ans = 0, j = 0;
-        int n = s.length();
-        for (int i = 0; i < n; ++i) {
-            char c = s.charAt(i);
-            while (ss[c]) {
-                ss[s.charAt(j++)] = false;
-            }
-            ans = Math.max(ans, i - j + 1);
-            ss[c] = true;
-        }
-        return ans;
-    }
-}
-```
+```python
+def lengthLongestNonRepSubstring2(s: str) -> int:
+	cs = {}
+	b = 0
+	maxl = 0
 
-```cpp
-class Solution {
-public:
-    int lengthOfLongestSubstring(string s) {
-        bool ss[128] = {false};
-        int n = s.size();
-        int ans = 0;
-        for (int i = 0, j = 0; i < n; ++i) {
-            while (ss[s[i]]) {
-                ss[s[j++]] = false;
-            }
-            ss[s[i]] = true;
-            ans = max(ans, i - j + 1);
-        }
-        return ans;
-    }
-};
+	if s=="": return 0
+	for i in range (len(s)):
+	    if s[i] not in cs:
+		cs[s[i]]=i
+		if len(cs)>maxl: maxl=len(cs)
+	    else:
+		if len(cs)>maxl: maxl=len(cs)
+		b = cs[s[i]]+1
+		cs = {key:val for key, val in cs.items() if val>=b}
+		cs[s[i]]=i
+
+	return maxl
 ```
 
 <!-- tabs:end -->
+
+
+<br/>
+
+### Solution 5 - Two pointers solution (dictionary + moving pointers only)
+
+<!-- tabs:start -->
+
+```python
+def lengthLongestNonRepSubstring2(s: str) -> int:
+	cs = {}
+	b = 0
+	maxl = 0
+
+	if s=="": return 0
+	for i in range (len(s)):
+	    if s[i] not in cs:
+		cs[s[i]]=i
+		if len(cs)>maxl: maxl=len(cs)
+	    else:
+		if len(cs)>maxl: maxl=len(cs)
+		b = cs[s[i]]+1
+		cs = {key:val for key, val in cs.items() if val>=b}
+		cs[s[i]]=i
+
+	return maxl
+```
+
+<!-- tabs:end -->
+
+
 
 <!-- end -->
