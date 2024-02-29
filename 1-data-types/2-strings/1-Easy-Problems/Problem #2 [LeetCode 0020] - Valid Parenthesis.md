@@ -64,15 +64,15 @@ The time complexity is $O(n)$, and the space complexity is $O(n)$. Here, $n$ is 
 #### Python:
 ```python
 class Solution:
-    def isValid(self, s: str) -> bool:
-        stk = []
-        d = {'()', '[]', '{}'}
+    def isValid(s):
+        stack = [0]
+        dict = {0: None, '(':')', '[':']', '{':'}'}
         for c in s:
-            if c in '({[':
-                stk.append(c)
-            elif not stk or stk.pop() + c not in d:
-                return False
-        return not stk
+            if c in dict:
+                stack.append(c)
+            else:
+                if dict[stack.pop()] != c: return False
+        return stack == [0]
 ```
 
 #### JAVA:
