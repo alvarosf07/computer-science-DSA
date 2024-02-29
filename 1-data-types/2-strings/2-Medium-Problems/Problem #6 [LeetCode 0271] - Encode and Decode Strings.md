@@ -84,7 +84,6 @@ String[] strs = decoder.decode(msg);
 
 <!-- tabs:start -->
 
-### Python:
 ```python
 class Codec:
     def encode(self, strs: List[str]) -> str:
@@ -107,7 +106,6 @@ class Codec:
 
 <!-- tabs:start -->
 
-### Python:
 ```python
 class Codec:
     def encode(self, strs: List[str]) -> str:
