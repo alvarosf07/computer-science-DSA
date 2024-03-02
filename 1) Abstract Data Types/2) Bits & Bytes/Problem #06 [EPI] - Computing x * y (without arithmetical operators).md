@@ -39,7 +39,7 @@ class Solution:
         return a if a < 0x80000000 else ~(a ^ 0xFFFFFFFF)
 ```
 
-# JAVA:
+#### JAVA:
 ```java
 class Solution {
     public int getSum(int a, int b) {
@@ -48,7 +48,7 @@ class Solution {
 }
 ```
 
-# C++:
+#### C++:
 ```cpp
 class Solution {
 public:
