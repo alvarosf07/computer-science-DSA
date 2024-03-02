@@ -94,7 +94,7 @@ Then we traverse the following characters. If it is a digit, we judge whether ad
 
 After the traversal ends, we return the result according to the positive or negative sign.
 
-The time complexity is $O(n)$, where $n$ is the length of the string. We only need to process all characters in turn. The space complexity is $O(1)$.
+The time complexity is $O(n)$, where $n$ is the length of the string. We only need to process all characters in turn. The space complexity is $O(1)$
 
 <!-- tabs:start -->
 
