@@ -1,4 +1,4 @@
-# [1545. Find Kth Bit in Nth Binary String](https://leetcode.com/problems/find-kth-bit-in-nth-binary-string)
+# [LeetCode 1545 - Find Kth Bit in Nth Binary String](https://leetcode.com/problems/find-kth-bit-in-nth-binary-string)
 
 
 ## Description
@@ -50,6 +50,8 @@ The 11<sup>th</sup> bit is &quot;1&quot;.
 	<li><code>1 &lt;= k &lt;= 2<sup>n</sup> - 1</code></li>
 </ul>
 
+<br/>
+
 ## Solutions
 
 ### Solution 1: Case Analysis + Recursion
@@ -67,6 +69,7 @@ The time complexity is $O(n)$, and the space complexity is $O(n)$. Here, $n$ is 
 
 <!-- tabs:start -->
 
+#### Python:
 ```python
 class Solution:
     def findKthBit(self, n: int, k: int) -> str:
@@ -83,6 +86,7 @@ class Solution:
         return str(dfs(n, k))
 ```
 
+#### JAVA:
 ```java
 class Solution {
     public char findKthBit(int n, int k) {
@@ -105,6 +109,7 @@ class Solution {
 }
 ```
 
+#### C++:
 ```cpp
 class Solution {
 public:
@@ -125,45 +130,6 @@ public:
         return '0' + dfs(n, k);
     }
 };
-```
-
-```go
-func findKthBit(n int, k int) byte {
-	var dfs func(n, k int) int
-	dfs = func(n, k int) int {
-		if k == 1 {
-			return 0
-		}
-		if k&(k-1) == 0 {
-			return 1
-		}
-		m := 1 << n
-		if k*2 < m-1 {
-			return dfs(n-1, k)
-		}
-		return dfs(n-1, m-k) ^ 1
-	}
-	return byte('0' + dfs(n, k))
-}
-```
-
-```ts
-function findKthBit(n: number, k: number): string {
-    const dfs = (n: number, k: number): number => {
-        if (k === 1) {
-            return 0;
-        }
-        if ((k & (k - 1)) === 0) {
-            return 1;
-        }
-        const m = 1 << n;
-        if (k * 2 < m - 1) {
-            return dfs(n - 1, k);
-        }
-        return dfs(n - 1, m - k) ^ 1;
-    };
-    return dfs(n, k).toString();
-}
 ```
 
 <!-- tabs:end -->
