@@ -1,4 +1,4 @@
-# Elements of Programming Interviews 4.10 - Generate Uniform Random Numbers
+# Elements of Programming Interviews 4.10 - Generate Uniform Random Numbers           ${\textsf{\color{lightgreen} [Easy] }}$
 
 
 ## Description
