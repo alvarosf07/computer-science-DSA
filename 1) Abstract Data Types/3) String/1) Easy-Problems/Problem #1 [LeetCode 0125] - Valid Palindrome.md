@@ -1,4 +1,4 @@
-# [LeetCode 125 - Valid Palindrome](https://leetcode.com/problems/valid-palindrome)
+# [LeetCode 125 - Valid Palindrome](https://leetcode.com/problems/valid-palindrome)           ${\textsf{\color{lightgreen} [Easy] }}$
 
 
 ## Description
