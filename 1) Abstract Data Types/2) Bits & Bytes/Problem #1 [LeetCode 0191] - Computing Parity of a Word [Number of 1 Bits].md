@@ -41,12 +41,14 @@
 <p><strong>Constraints:</strong></p>
 
 <ul>
-	<li>The input must be a <strong>binary string</strong> of length <code>32</code>.</li>
+<li>The input must be a <strong>binary string</strong> of length <code>32</code>.</li>
 </ul>
 
 <p>&nbsp;</p>
 <strong>Follow up:</strong> If this function is called many times, how would you optimize it?
 
+<br/>
+<br/>
 <br/>
 
 ## Solutions
