@@ -1,4 +1,4 @@
-# [LeetCode 8 - String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi)
+# [LeetCode 8 - String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi)         ${\textsf{\color{orange} [Medium] }}$
 
 
 ## Description
