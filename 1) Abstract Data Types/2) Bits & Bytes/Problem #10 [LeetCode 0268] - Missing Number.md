@@ -1,4 +1,4 @@
-# [268. Missing Number](https://leetcode.com/problems/missing-number)
+# [LeetCode 268 - Missing Number](https://leetcode.com/problems/missing-number)
 
 
 ## Description
@@ -43,6 +43,8 @@
 <p>&nbsp;</p>
 <p><strong>Follow up:</strong> Could you implement a solution using only <code>O(1)</code> extra space complexity and <code>O(n)</code> runtime complexity?</p>
 
+<br/>
+
 ## Solutions
 
 ### Solution 1: Bitwise Operation
@@ -58,12 +60,14 @@ The time complexity is $O(n)$, where $n$ is the length of the array. The space c
 
 <!-- tabs:start -->
 
+#### Python
 ```python
 class Solution:
     def missingNumber(self, nums: List[int]) -> int:
         return reduce(xor, (i ^ v for i, v in enumerate(nums, 1)))
 ```
 
+#### JAVA:
 ```java
 class Solution {
     public int missingNumber(int[] nums) {
@@ -77,6 +81,7 @@ class Solution {
 }
 ```
 
+#### C++:
 ```cpp
 class Solution {
 public:
@@ -91,72 +96,7 @@ public:
 };
 ```
 
-```go
-func missingNumber(nums []int) (ans int) {
-	n := len(nums)
-	ans = n
-	for i, v := range nums {
-		ans ^= (i ^ v)
-	}
-	return
-}
-```
 
-```ts
-function missingNumber(nums: number[]): number {
-    const n = nums.length;
-    let ans = n;
-    for (let i = 0; i < n; ++i) {
-        ans ^= i ^ nums[i];
-    }
-    return ans;
-}
-```
-
-```rust
-impl Solution {
-    pub fn missing_number(nums: Vec<i32>) -> i32 {
-        let n = nums.len() as i32;
-        let mut ans = n;
-        for (i, v) in nums.iter().enumerate() {
-            ans ^= (i as i32) ^ v;
-        }
-        ans
-    }
-}
-```
-
-```js
-/**
- * @param {number[]} nums
- * @return {number}
- */
-var missingNumber = function (nums) {
-    const n = nums.length;
-    let ans = n;
-    for (let i = 0; i < n; ++i) {
-        ans ^= i ^ nums[i];
-    }
-    return ans;
-};
-```
-
-```php
-class Solution {
-    /**
-     * @param Integer[] $nums
-     * @return Integer
-     */
-    function missingNumber($nums) {
-        $n = count($nums);
-        $sumN = (($n + 1) * $n) / 2;
-        for ($i = 0; $i < $n; $i++) {
-            $sumN -= $nums[$i];
-        }
-        return $sumN;
-    }
-}
-```
 
 <!-- tabs:end -->
 
@@ -173,79 +113,6 @@ class Solution:
     def missingNumber(self, nums: List[int]) -> int:
         n = len(nums)
         return (1 + n) * n // 2 - sum(nums)
-```
-
-```java
-class Solution {
-    public int missingNumber(int[] nums) {
-        int n = nums.length;
-        int ans = n;
-        for (int i = 0; i < n; ++i) {
-            ans += i - nums[i];
-        }
-        return ans;
-    }
-}
-```
-
-```cpp
-class Solution {
-public:
-    int missingNumber(vector<int>& nums) {
-        int n = nums.size();
-        return (1 + n) * n / 2 - accumulate(nums.begin(), nums.end(), 0);
-    }
-};
-```
-
-```go
-func missingNumber(nums []int) (ans int) {
-	n := len(nums)
-	ans = n
-	for i, v := range nums {
-		ans += i - v
-	}
-	return
-}
-```
-
-```ts
-function missingNumber(nums: number[]): number {
-    const n = nums.length;
-    let ans = n;
-    for (let i = 0; i < n; ++i) {
-        ans += i - nums[i];
-    }
-    return ans;
-}
-```
-
-```rust
-impl Solution {
-    pub fn missing_number(nums: Vec<i32>) -> i32 {
-        let n = nums.len() as i32;
-        let mut ans = n;
-        for (i, &v) in nums.iter().enumerate() {
-            ans += (i as i32) - v;
-        }
-        ans
-    }
-}
-```
-
-```js
-/**
- * @param {number[]} nums
- * @return {number}
- */
-var missingNumber = function (nums) {
-    const n = nums.length;
-    let ans = n;
-    for (let i = 0; i < n; ++i) {
-        ans += i - nums[i];
-    }
-    return ans;
-};
 ```
 
 <!-- tabs:end -->
