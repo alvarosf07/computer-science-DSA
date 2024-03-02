@@ -51,6 +51,7 @@ class Solution:
         return ans
 ```
 
+#### JAVA:
 ```java
 class Solution {
     public int singleNumber(int[] nums) {
@@ -68,6 +69,7 @@ class Solution {
 }
 ```
 
+#### C++:
 ```cpp
 class Solution {
 public:
