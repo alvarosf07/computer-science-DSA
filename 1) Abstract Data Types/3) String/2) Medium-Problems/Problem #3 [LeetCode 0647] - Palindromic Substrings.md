@@ -1,4 +1,4 @@
-# [LeetCode 647 - Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings)
+# [LeetCode 647 - Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings)         ${\textsf{\color{orange} [Medium] }}$
 
 
 ## Description
