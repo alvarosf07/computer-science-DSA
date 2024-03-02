@@ -1,4 +1,4 @@
-# [190. Reverse Bits](https://leetcode.com/problems/reverse-bits)
+# [LeetCode 190 - Reverse Bits](https://leetcode.com/problems/reverse-bits)
 
 
 ## Description
@@ -39,12 +39,15 @@
 <p>&nbsp;</p>
 <p><strong>Follow up:</strong> If this function is called many times, how would you optimize it?</p>
 
+<br/>
+
 ## Solutions
 
 ### Solution 1
 
 <!-- tabs:start -->
 
+#### Python:
 ```python
 class Solution:
     def reverseBits(self, n: int) -> int:
@@ -55,6 +58,7 @@ class Solution:
         return res
 ```
 
+#### JAVA:
 ```java
 public class Solution {
     // you need treat n as an unsigned value
@@ -69,6 +73,7 @@ public class Solution {
 }
 ```
 
+#### C++:
 ```cpp
 class Solution {
 public:
@@ -82,47 +87,6 @@ public:
     }
 };
 ```
-
-```go
-func reverseBits(num uint32) uint32 {
-	var ans uint32 = 0
-	for i := 0; i < 32; i++ {
-		ans |= (num & 1) << (31 - i)
-		num >>= 1
-	}
-	return ans
-}
-```
-
-```rust
-impl Solution {
-    pub fn reverse_bits(mut x: u32) -> u32 {
-        let mut res = 0;
-        for _ in 0..32 {
-            res = (res << 1) | (x & 1);
-            x >>= 1;
-        }
-        res
-    }
-}
-```
-
-```js
-/**
- * @param {number} n - a positive integer
- * @return {number} - a positive integer
- */
-var reverseBits = function (n) {
-    let res = 0;
-    for (let i = 0; i < 32 && n > 0; ++i) {
-        res |= (n & 1) << (31 - i);
-        n >>>= 1;
-    }
-    // 无符号右移
-    return res >>> 0;
-};
-```
-
 <!-- tabs:end -->
 
 <!-- end -->
