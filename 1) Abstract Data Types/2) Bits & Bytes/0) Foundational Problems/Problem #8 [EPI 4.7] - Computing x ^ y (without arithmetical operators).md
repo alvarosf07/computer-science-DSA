@@ -1,4 +1,4 @@
-# Elements of Programming Interviews 4.7 - Computing x/y without arithmetical operators
+# Elements of Programming Interviews 4.7 - Computing x/y without arithmetical operators          ${\textsf{\color{orange} [Medium] }}$
 
 
 ## Description
