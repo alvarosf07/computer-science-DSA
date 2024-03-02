@@ -1,4 +1,4 @@
-# [LeetCode 136 - Single Number](https://leetcode.com/problems/single-number) 
+# [LeetCode 136 - Single Number](https://leetcode.com/problems/single-number)         ${\textsf{\color{lightgreen} [Easy] }}$ 
 
 
 ## Description
