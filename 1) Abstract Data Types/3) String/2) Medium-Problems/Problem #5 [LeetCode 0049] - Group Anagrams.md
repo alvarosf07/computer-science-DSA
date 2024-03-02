@@ -1,4 +1,4 @@
-# [LeetCode 49 - Group Anagrams](https://leetcode.com/problems/group-anagrams)
+# [LeetCode 49 - Group Anagrams](https://leetcode.com/problems/group-anagrams)         ${\textsf{\color{orange} [Medium] }}$
 
 
 ## Description
@@ -51,7 +51,7 @@ The time complexity is $O(n\times k\times \log k)$, where $n$ and $k$ are the le
 
 <!-- tabs:start -->
 
-### Python: 
+#### Python: 
 ```python
 class Solution:
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
@@ -62,7 +62,7 @@ class Solution:
         return list(d.values())
 ```
 
-### JAVA:
+#### JAVA:
 ```java
 class Solution {
     public List<List<String>> groupAnagrams(String[] strs) {
@@ -78,7 +78,7 @@ class Solution {
 }
 ```
 
-# C++:
+#### C++:
 ```cpp
 class Solution {
 public:
@@ -97,6 +97,8 @@ public:
 ```
 
 <!-- tabs:end -->
+
+<br/>
 
 ### Solution 2: Counting
 
@@ -119,7 +121,7 @@ class Solution:
         return list(d.values())
 ```
 
-# JAVA:
+#### JAVA:
 ```java
 class Solution {
     public List<List<String>> groupAnagrams(String[] strs) {
@@ -143,7 +145,7 @@ class Solution {
 }
 ```
 
-# C++:
+#### C++:
 ```cpp
 class Solution {
 public:
