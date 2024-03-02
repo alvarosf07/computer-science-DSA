@@ -1,4 +1,4 @@
-# Elements of Programming Interviews 4.5 - Compute x * y without arithmetical operations
+# Elements of Programming Interviews 4.5 - Compute x * y without arithmetical operations          ${\textsf{\color{orange} [Medium] }}$
 
 
 ## Description
