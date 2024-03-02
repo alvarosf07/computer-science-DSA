@@ -1,4 +1,4 @@
-# [LeetCode 424 - Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement)
+# [LeetCode 424 - Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement)         ${\textsf{\color{orange} [Medium] }}$
 
 
 ## Description
