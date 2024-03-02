@@ -1,3 +1,4 @@
+# Define Min Stack
 # https://leetcode.com/problems/min-stack/
 
 class MinStack:
