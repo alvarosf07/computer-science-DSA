@@ -1,4 +1,4 @@
-# [LeetCode 338 - Counting Bits](https://leetcode.com/problems/counting-bits)
+# [LeetCode 338 - Counting Bits](https://leetcode.com/problems/counting-bits)          ${\textsf{\color{lightgreen} [Easy] }}$
 
 
 ## Description
