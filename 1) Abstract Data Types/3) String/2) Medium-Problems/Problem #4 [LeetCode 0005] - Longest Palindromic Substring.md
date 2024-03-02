@@ -113,6 +113,8 @@ public:
 
 <!-- tabs:end -->
 
+<br/>
+
 ### Solution 2: Enumerate Palindrome Midpoint
 
 We can enumerate the midpoint of the palindrome, spread to both sides, and find the longest palindrome.
