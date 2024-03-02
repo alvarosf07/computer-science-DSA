@@ -1,4 +1,4 @@
-# [LeetCode 137 - Single Number II](https://leetcode.com/problems/single-number-ii)
+# [LeetCode 137 - Single Number II](https://leetcode.com/problems/single-number-ii)         ${\textsf{\color{orange} [Medium] }}$
 
 
 ## Description
