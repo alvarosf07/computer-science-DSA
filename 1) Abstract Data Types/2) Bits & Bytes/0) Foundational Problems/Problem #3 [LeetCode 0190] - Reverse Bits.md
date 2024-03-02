@@ -1,4 +1,4 @@
-# [LeetCode 190 - Reverse Bits](https://leetcode.com/problems/reverse-bits)
+# [LeetCode 190 - Reverse Bits](https://leetcode.com/problems/reverse-bits)         ${\textsf{\color{lightgreen} [Easy] }}$
 
 
 ## Description
