@@ -1,4 +1,4 @@
-# [76. Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring)
+# [76. Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring)         ${\textsf{\color{WildStrawberry} [Hard] }}$
 
 
 ## Description
