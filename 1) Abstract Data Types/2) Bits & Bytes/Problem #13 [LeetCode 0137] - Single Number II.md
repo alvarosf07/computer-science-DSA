@@ -1,4 +1,4 @@
-# [137. Single Number II](https://leetcode.com/problems/single-number-ii)
+# [LeetCode 137 - Single Number II](https://leetcode.com/problems/single-number-ii)
 
 
 ## Description
@@ -24,6 +24,8 @@
 	<li>Each element in <code>nums</code> appears exactly <strong>three times</strong> except for one element which appears <strong>once</strong>.</li>
 </ul>
 
+<br/>
+
 ## Solutions
 
 ### Solution 1: Bitwise Operation
@@ -34,6 +36,7 @@ The time complexity is $O(n \times \log M)$, where $n$ and $M$ are the length of
 
 <!-- tabs:start -->
 
+#### Python:
 ```python
 class Solution:
     def singleNumber(self, nums: List[int]) -> int:
@@ -82,81 +85,9 @@ public:
     }
 };
 ```
-
-```go
-func singleNumber(nums []int) int {
-	ans := int32(0)
-	for i := 0; i < 32; i++ {
-		cnt := int32(0)
-		for _, num := range nums {
-			cnt += int32(num) >> i & 1
-		}
-		cnt %= 3
-		ans |= cnt << i
-	}
-	return int(ans)
-}
-```
-
-```ts
-function singleNumber(nums: number[]): number {
-    let ans = 0;
-    for (let i = 0; i < 32; i++) {
-        const count = nums.reduce((r, v) => r + ((v >> i) & 1), 0);
-        ans |= count % 3 << i;
-    }
-    return ans;
-}
-```
-
-```rust
-impl Solution {
-    pub fn single_number(nums: Vec<i32>) -> i32 {
-        let mut ans = 0;
-        for i in 0..32 {
-            let count = nums
-                .iter()
-                .map(|v| (v >> i) & 1)
-                .sum::<i32>();
-            ans |= count % 3 << i;
-        }
-        ans
-    }
-}
-```
-
-```c
-int singleNumber(int* nums, int numsSize) {
-    int ans = 0;
-    for (int i = 0; i < 32; i++) {
-        int count = 0;
-        for (int j = 0; j < numsSize; j++) {
-            if (nums[j] >> i & 1) {
-                count++;
-            }
-        }
-        ans |= (uint) (count % 3) << i;
-    }
-    return ans;
-}
-```
-
-```swift
-class Solution {
-    func singleNumber(_ nums: [Int]) -> Int {
-        var a = nums.sorted()
-        var n = a.count
-        for i in stride(from: 0, through: n - 2, by: 3) {
-            if a[i] != a[i + 1] {
-                return a[i]
-            }
-        }
-        return a[n - 1]
-    }
-}
-```
-
 <!-- tabs:end -->
+
+<br/>
 
 ### Solution 2: Digital Circuit
 
@@ -207,82 +138,6 @@ class Solution:
             a, b = aa, bb
         return b
 ```
-
-```java
-class Solution {
-    public int singleNumber(int[] nums) {
-        int a = 0, b = 0;
-        for (int c : nums) {
-            int aa = (~a & b & c) | (a & ~b & ~c);
-            int bb = ~a & (b ^ c);
-            a = aa;
-            b = bb;
-        }
-        return b;
-    }
-}
-```
-
-```cpp
-class Solution {
-public:
-    int singleNumber(vector<int>& nums) {
-        int a = 0, b = 0;
-        for (int c : nums) {
-            int aa = (~a & b & c) | (a & ~b & ~c);
-            int bb = ~a & (b ^ c);
-            a = aa;
-            b = bb;
-        }
-        return b;
-    }
-};
-```
-
-```go
-func singleNumber(nums []int) int {
-	a, b := 0, 0
-	for _, c := range nums {
-		aa := (^a & b & c) | (a & ^b & ^c)
-		bb := ^a & (b ^ c)
-		a, b = aa, bb
-	}
-	return b
-}
-```
-
-```ts
-function singleNumber(nums: number[]): number {
-    let a = 0;
-    let b = 0;
-    for (const c of nums) {
-        const aa = (~a & b & c) | (a & ~b & ~c);
-        const bb = ~a & (b ^ c);
-        a = aa;
-        b = bb;
-    }
-    return b;
-}
-```
-
-```rust
-impl Solution {
-    pub fn single_number(nums: Vec<i32>) -> i32 {
-        let mut a = 0;
-        let mut b = 0;
-
-        for c in nums {
-            let aa = (!a & b & c) | (a & !b & !c);
-            let bb = !a & (b ^ c);
-            a = aa;
-            b = bb;
-        }
-
-        return b;
-    }
-}
-```
-
 <!-- tabs:end -->
 
 <!-- end -->
