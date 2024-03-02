@@ -1,4 +1,4 @@
-# [371. Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers)
+# [LeetCode 371 - Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers)
 
 
 ## Description
@@ -20,12 +20,15 @@
 	<li><code>-1000 &lt;= a, b &lt;= 1000</code></li>
 </ul>
 
+<br/>
+
 ## Solutions
 
 ### Solution 1
 
 <!-- tabs:start -->
 
+#### Python:
 ```python
 class Solution:
     def getSum(self, a: int, b: int) -> int:
@@ -36,6 +39,7 @@ class Solution:
         return a if a < 0x80000000 else ~(a ^ 0xFFFFFFFF)
 ```
 
+# JAVA:
 ```java
 class Solution {
     public int getSum(int a, int b) {
@@ -44,6 +48,7 @@ class Solution {
 }
 ```
 
+# C++:
 ```cpp
 class Solution {
 public:
@@ -56,17 +61,6 @@ public:
         return a;
     }
 };
-```
-
-```go
-func getSum(a int, b int) int {
-	for b != 0 {
-		s := a ^ b
-		b = (a & b) << 1
-		a = s
-	}
-	return a
-}
 ```
 
 <!-- tabs:end -->
