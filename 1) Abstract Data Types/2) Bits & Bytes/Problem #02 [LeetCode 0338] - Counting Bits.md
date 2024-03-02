@@ -1,4 +1,4 @@
-# [338. Counting Bits](https://leetcode.com/problems/counting-bits)
+# [LeetCode 338 - Counting Bits](https://leetcode.com/problems/counting-bits)
 
 
 ## Description
@@ -46,18 +46,22 @@
 	<li>Can you do it without using any built-in function (i.e., like <code>__builtin_popcount</code> in C++)?</li>
 </ul>
 
+<br/>
+
 ## Solutions
 
 ### Solution 1
 
 <!-- tabs:start -->
 
+#### Python:
 ```python
 class Solution:
     def countBits(self, n: int) -> List[int]:
         return [i.bit_count() for i in range(n + 1)]
 ```
 
+#### JAVA:
 ```java
 class Solution {
     public int[] countBits(int n) {
@@ -70,6 +74,7 @@ class Solution {
 }
 ```
 
+#### C++:
 ```cpp
 class Solution {
 public:
@@ -83,36 +88,9 @@ public:
 };
 ```
 
-```go
-func countBits(n int) []int {
-	ans := make([]int, n+1)
-	for i := 0; i <= n; i++ {
-		ans[i] = bits.OnesCount(uint(i))
-	}
-	return ans
-}
-```
-
-```ts
-function countBits(n: number): number[] {
-    const ans: number[] = Array(n + 1).fill(0);
-    for (let i = 0; i <= n; ++i) {
-        ans[i] = bitCount(i);
-    }
-    return ans;
-}
-
-function bitCount(n: number): number {
-    let count = 0;
-    while (n) {
-        n &= n - 1;
-        ++count;
-    }
-    return count;
-}
-```
-
 <!-- tabs:end -->
+
+<br/>
 
 ### Solution 2
 
@@ -125,51 +103,6 @@ class Solution:
         for i in range(1, n + 1):
             ans[i] = ans[i & (i - 1)] + 1
         return ans
-```
-
-```java
-class Solution {
-    public int[] countBits(int n) {
-        int[] ans = new int[n + 1];
-        for (int i = 1; i <= n; ++i) {
-            ans[i] = ans[i & (i - 1)] + 1;
-        }
-        return ans;
-    }
-}
-```
-
-```cpp
-class Solution {
-public:
-    vector<int> countBits(int n) {
-        vector<int> ans(n + 1);
-        for (int i = 1; i <= n; ++i) {
-            ans[i] = ans[i & (i - 1)] + 1;
-        }
-        return ans;
-    }
-};
-```
-
-```go
-func countBits(n int) []int {
-	ans := make([]int, n+1)
-	for i := 1; i <= n; i++ {
-		ans[i] = ans[i&(i-1)] + 1
-	}
-	return ans
-}
-```
-
-```ts
-function countBits(n: number): number[] {
-    const ans: number[] = Array(n + 1).fill(0);
-    for (let i = 1; i <= n; ++i) {
-        ans[i] = ans[i & (i - 1)] + 1;
-    }
-    return ans;
-}
 ```
 
 <!-- tabs:end -->
