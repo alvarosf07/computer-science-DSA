@@ -124,4 +124,61 @@ public:
 
 <!-- tabs:end -->
 
+<br/>
+
+### Solution 2:  Single Pointer
+
+Similar idea to the previous solution, but using only one pointer and indexing both from the beginning and from the end of the word.
+
+The time complexity is $O(n/2)$, where $n$ is the length of the string $s$. The space complexity is $O(1)$.
+
+<!-- tabs:start -->
+
+#### Python:
+```python
+class Solution:
+    def isPalindrome(self, s: str) -> bool:
+        for i in range (len(s)):
+        if s[i] != s[-i-1]: return False
+        if i>= len(s)/2 - 1: return True
+```
+
+```python
+class Solution:
+    def isPalindrome(self, s: str) -> bool:
+        i = 0
+	while i <= len(s)/2 -1:
+		if s[i] != s[-i-1]: return False
+		i += 1
+	return True
+```
+
+<!-- tabs:end -->
+
+<br/>
+
+### Solution 3: String Slicing
+
+Using string slicing.
+
+<!-- tabs:start -->
+
+#### Python:
+```python
+class Solution:
+    def isPalindrome(self, s: str) -> bool:
+        return s == s[::-1]
+```
+
+Same but checking for lowercase and alphanumeric values:
+```python
+class Solution:
+    def isPalindrome(self, s: str) -> bool:
+        s = [i for i in s.lower() if i.isalnum()]
+    	return s == s[::-1]
+```
+
+<!-- tabs:end -->
+
+
 <!-- end -->
