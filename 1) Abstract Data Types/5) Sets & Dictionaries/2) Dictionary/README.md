@@ -10,7 +10,7 @@
 
 <p> Dictionary and Set problems can be found in this repository under the section:</p> 
 
-:link: [Hash-Maps](/2%20Data%20Structures.md)
+:link: [Hash-Maps](/2%20Data%20Structures/README.md)
 
 
 
