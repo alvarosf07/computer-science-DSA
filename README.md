@@ -65,7 +65,7 @@ DSA problems are classified into 5 <code>fields</code>, with its own <code>sub-f
 <br/>
 
 ### Classes of Problems (& Difficulty Levels)
-Within each sub-field, problems are classified according to 4 main classes, which encompass different objectives and difficulty levels:
+Within each sub-field, problems are classified according to 4 main <code>classes</code>, which encompass different objectives and <code>difficulty</code> levels:
 
 <ol start="0"> 
   <li> <b>Foundational Problems</b> </li>
