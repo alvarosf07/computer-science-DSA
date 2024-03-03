@@ -91,7 +91,16 @@ Within each sub-field, problems are classified according to 4 main classes, whic
   Hard problems are very challenging (and tricky) problems that require not only a good mastery of the specific DSA sub-field, but also good knowledge and skills with algorithms and most importantly: good coding intuition. Most of the hard problems require realizing a certain trick or alternative formulation that makes the question easier to solve. Hard problems are asked in coding interviews mainly oriented to heavy software-developer roles, or certain positions in finance that require strong problem-solving skills. Depending on the coding expertise, hard problems can take from 15 minutes to several hours to solve; although is common to give up before finding a solution. For time optimization purposes, it's recommended to look at the solution of hard problems if no meaningful progress towards the solution has been made after 30-40 minutes.
 </ol> 
 <br/>
-  
+
+
+
+### Solutions
+All the problems presented in the collection include solutions. The main programming languages of the solutions are Python, JAVA and C++:
+
+* Solutions for the foundational problems are available only in Python at the moment.
+* Solutions for all the problems (easy, medium and hard) are usually available in Python, JAVA and C++ (except a few cases where only Python is available).
+
+Solutions for the problems are not all my own, but usually a combination of my personal implementation and the best solutions I've found for each problem. I've made an effort to reference the original source of the answer for those problems/solutions that are not my own, but feedback is appreciated if this is not the case for some problems.
 
 
 <br/>
@@ -102,7 +111,7 @@ Within each sub-field, problems are classified according to 4 main classes, whic
 
 ## Getting Started
 
-1. **Explore Categories:** Browse through our organized categories to find problems that align with your interests and skill level.
+1. **Explore Categories:** Browse through the organized categories to find problems that align with your interests and skill level.
 2. **Challenge Yourself:** Dive into the problems, solve them, and test your understanding of key DSA concepts.
 3. **Track Your Progress:** Keep track of your progress as you tackle each problem, and celebrate your achievements along the way.
 
