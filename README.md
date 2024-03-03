@@ -123,7 +123,7 @@ Solutions for the problems are not all my own, but usually a combination of my p
 
 ## Contributing
 
-We welcome contributions from the community to enhance and expand our problem collection. If you have suggestions for additional problems, improvements to existing ones, or any other feedback, please feel free to contribute!
+Contributions from the community to enhance and improve the problem collection are more than welcome! If you have suggestions for additional problems, improvements to existing ones, or any other feedback, please feel free to contribute!
 
 <br/>
 
