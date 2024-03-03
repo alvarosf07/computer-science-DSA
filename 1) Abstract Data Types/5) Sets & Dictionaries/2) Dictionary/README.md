@@ -4,6 +4,9 @@
 
 <p> In Python, a pair of braces creates an empty dictionary: <code>{}</code>. Placing a comma-separated list of <code>key</code>:<code>value</code> pairs within the braces adds initial <code>key</code>:<code>value</code> pairs to the dictionary.</p>
 
+<p> Dictionary and Set problems can be found in this repository under the section:</p> 
+
+:link: [Hash-Maps](/2%20Data%20Structures.md)
 
 
 
