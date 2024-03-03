@@ -6,7 +6,8 @@
 
 <p> Dictionary foundational problems in Python that describe their basic operations and functionalities can be found in the below Jupyter Notebook: </p> 
 
-:link: [Python Dictionaries - Foundational Problems](0%20Python%20Dictionaries%20-%20Foundational%20Problems.ipynb)
+:link: [Python Dictionaries - Foundational Problems](Python%20Dictionaries%20-%20Foundational%20Problems.ipynb)
+<br/>
 :link: [PythonDictionaries-FoundationalProblems](PythonDictionaries-FoundationalProblems.md)
 
 <p> Dictionary and Set problems can be found in this repository under the section:</p> 
