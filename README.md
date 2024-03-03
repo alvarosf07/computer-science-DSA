@@ -11,7 +11,7 @@ This repository houses my personal curated selection of the most relevant DSA pr
 
 ## Motivation
 
-Many people do more than 300 coding questions to prepare for coding interviews. It is **NOT NECESSARY** to do this. After reviewing many different sources (LeetCode, HackerRank, GeeksforGeeks, Elements of Programming Interviews... see all below) I have put together a curated selection of the ~100 most relevant DSA problems, organized by categories, classes and difficulty levels. 
+Many people do more than 300 coding questions to prepare for coding interviews. It is **NOT NECESSARY** to do this. After reviewing many different sources (LeetCode, HackerRank, GeeksforGeeks, Elements of Programming Interviews... see all below) I have put together a curated selection of the ~100 most relevant DSA problems, organized by <code>fields</code>, <code>sub-fields</code>, <code>classes</code> of problems and <code>difficulty</code> levels. 
 
 This collection aims to simplify the learning curve to prepare for DSA coding interviews, by providing a structured and optimized selection of 5-10 problems for each DSA category, that will help you understand the "general type" of questions so you can reduce your workload by 80%, focusing only on the 20% of problems that matters the most.
 
@@ -39,17 +39,34 @@ This collection aims to simplify the learning curve to prepare for DSA coding in
 
 
 
-## Organization
-DSA problems are classified into 5 fields:
+## Contents & Organization
+DSA problems are classified into <code>fields</code>, <code>sub-fields</code>, <code>classes</code> of problems and <code>difficulty</code> levels.
+
+### Fields & Subfields
+DSA problems are classified into 5 <code>fields</code>, with its own <code>sub-fields</code>:
    1. Abstract Data Types
-   2. Data Structures
-   3. Algorithms
-   4. Systems Design (still work in progress)
-   5. Coding Interview Problems
+         * Numerical Types (& Math)
+            * Numerical Types
+            * Math Problems
+         * Bits & Bites
+         * String
+         * Lists, Stacks & Queues
+            * List
+            * Stack
+            * Queue 
+         * Sets & Dictionaries
+            * Set
+            * Dictionary
+   1. Data Structures
+   1. Algorithms
+   1. Systems Design (still work in progress)
+   1. Coding Interview Problems
 
 <br/>
 
-Each field is divided into subsequent sub-fields, as depicted in the mind map above. Within each sub-field, problems are (mostly) classified in 4 main categories:
+### Classes of Problems (& Difficulty Levels)
+Within each sub-field, problems are classified according to 4 main classes, which encompass different objectives and difficulty levels:
+
 <ol start="0"> 
   <li> <b>Foundational Problems</b> </li>
   Aim to provide a general introduction to the sub-field, and present the basic operations and functionalities in the form of short and to-the-point exercises. Foundational problems are not usually asked in practical coding interviews, but can be asked sometimes as part of "theoretical understanding" of a specific data-type or data-structure. In this repository, foundational problems are only introduced for Python at the moment, but some other languages (JAVA, C++) may be added in the future.
