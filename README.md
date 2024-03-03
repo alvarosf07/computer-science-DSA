@@ -11,7 +11,7 @@ This repository houses my personal structured and curated collection of the most
 
 ## Motivation
 
-Many people do more than 300 coding questions to prepare for coding interviews. It is **NOT NECESSARY** to do this. After reviewing many different sources (LeetCode, HackerRank, GeeksforGeeks, Elements of Programming Interviews... see all below) I have put together a curated selection of the ~100 most relevant DSA problems and their solutions, organized by <code>fields</code>, <code>sub-fields</code>, <code>classes</code> of problems and <code>difficulty</code> levels. 
+Many people do more than 500 coding questions to prepare for coding interviews. It is **NOT NECESSARY** to do this. After reviewing many different sources (LeetCode, HackerRank, GeeksforGeeks, Elements of Programming Interviews... see all below) I have put together a curated selection of the ~100 most relevant DSA problems and their solutions, organized by <code>fields</code>, <code>sub-fields</code>, <code>classes</code> of problems and <code>difficulty</code> levels. 
 
 This collection aims to simplify the learning curve to prepare for DSA coding interviews, by providing a structured and optimized selection of 5-10 problems for each DSA category, that will help you understand the "general type" of questions so you can reduce your workload by 80%, focusing only on the 20% of problems that matters the most.
 
