@@ -52,7 +52,6 @@ DSA problems are classified into <code>fields</code>, <code>sub-fields</code>, <
 DSA problems are classified into 5 <code>fields</code>, with its own <code>sub-fields</code>:
    1. Abstract Data Types
          * Numerical Types (& Math)
-            * [Numerical Types](/1%29%20Abstract%20Data%20Types/1%29%20Numerical%20Types%20%28%26%20Math%29/0%28%20Numerical%20Types%20Foundational%20Problems)
             * <a href="https://github.com/alvarosf07/computer-science-DSA/tree/DSA-dev/1)%20Abstract%20Data%20Types/1)%20Numerical%20Types%20(%26%20Math)/0)%20Numerical%20Types%20Foundational%20Problems">Numerical Types</a>
             * <a href="https://github.com/alvarosf07/computer-science-DSA/tree/DSA-dev/1)%20Abstract%20Data%20Types/1)%20Numerical%20Types%20(%26%20Math)/1)%20Math%20Problems">Math Problems</a>
          * Sequences I - Bits & Bytes
@@ -141,7 +140,6 @@ Contributions from the community to enhance and improve the problem collection a
 
 
 ## 6. Resources
-Most of the problems have been extracted from the following sources. Solutions for the exercises are not all my own, but usually a combination of my personal implementation and the best solutions I've found for each problem. I've made an effort to reference the original source of the answer for those problems/solutions that are not my own, but feedback is appreciated if this is not the case for some problems.
 
 #### DSA Books:
    * 🥇 [Data Structures and Algorithms Made Easy]()
@@ -170,7 +168,6 @@ Most of the problems have been extracted from the following sources. Solutions f
    * 🥇 [LeetCode](https://leetcode.com/)
    * 🥈 [HackerRank](https://www.hackerrank.com/)
    * 🥉 [Interview Bit](https://www.interviewbit.com/practice/)
-
    * [Coderbyte](https://coderbyte.com/)
    * [Techie Delight](https://www.techiedelight.com/)
    * [Codewars](https://www.codewars.com/)
