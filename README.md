@@ -54,16 +54,18 @@ DSA problems are classified into 5 <code>fields</code>, with its own <code>sub-f
          * Numerical Types (& Math)
             * [Numerical Types](/1%29%20Abstract%20Data%20Types/1%29%20Numerical%20Types%20%28%26%20Math%29/0%28%20Numerical%20Types%20Foundational%20Problems)
             * <a href="https://github.com/alvarosf07/computer-science-DSA/tree/DSA-dev/1)%20Abstract%20Data%20Types/1)%20Numerical%20Types%20(%26%20Math)/0)%20Numerical%20Types%20Foundational%20Problems">Numerical Types</a>
-            * <a href="">Math Problems</a>
-         * <a href="">Bits & Bytes</a>
-         * <a href="">String</a>
+            * <a href="https://github.com/alvarosf07/computer-science-DSA/tree/DSA-dev/1)%20Abstract%20Data%20Types/1)%20Numerical%20Types%20(%26%20Math)/1)%20Math%20Problems">Math Problems</a>
+         * Bits & Bytes
+            * <a href="https://github.com/alvarosf07/computer-science-DSA/tree/DSA-dev/1)%20Abstract%20Data%20Types/2)%20Bits%20%26%20Bytes">Byte</a>
+         * Strings
+            * <a href="https://github.com/alvarosf07/computer-science-DSA/tree/DSA-dev/1)%20Abstract%20Data%20Types/3)%20String">String</a>
          * Lists, Stacks & Queues
-            * <a href="">List</a>
-            * <a href="">Stack</a>
-            * <a href="">Queue</a>
+            * <a href="https://github.com/alvarosf07/computer-science-DSA/tree/DSA-dev/1)%20Abstract%20Data%20Types/4)%20Lists%2C%20Stacks%20%26%20Queues/1)%20List">List</a>
+            * <a href="https://github.com/alvarosf07/computer-science-DSA/tree/DSA-dev/1)%20Abstract%20Data%20Types/4)%20Lists%2C%20Stacks%20%26%20Queues/2)%20Stack">Stack</a>
+            * <a href="https://github.com/alvarosf07/computer-science-DSA/tree/DSA-dev/1)%20Abstract%20Data%20Types/4)%20Lists%2C%20Stacks%20%26%20Queues/3)%20Queue">Queue</a>
          * Sets & Dictionaries
-            * <a href="">Set</a>
-            * <a href="">Dictionary</a>
+            * <a href="https://github.com/alvarosf07/computer-science-DSA/tree/DSA-dev/1)%20Abstract%20Data%20Types/5)%20Sets%20%26%20Dictionaries/1)%20Set">Set</a>
+            * <a href="https://github.com/alvarosf07/computer-science-DSA/tree/DSA-dev/1)%20Abstract%20Data%20Types/5)%20Sets%20%26%20Dictionaries/2)%20Dictionary">Dictionary</a>
    1. Data Structures
    1. Algorithms
    1. Systems Design (still work in progress)
