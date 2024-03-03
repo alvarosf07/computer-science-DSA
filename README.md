@@ -52,7 +52,7 @@ DSA problems are classified into <code>fields</code>, <code>sub-fields</code>, <
 DSA problems are classified into 5 <code>fields</code>, with its own <code>sub-fields</code>:
    1. Abstract Data Types
          * Numerical Types (& Math)
-            * <a href="https://github.com/alvarosf07/computer-science-DSA/tree/DSA-dev/1)%20Abstract%20Data%20Types/1)%20Numerical%20Types%20(%26%20Math)/0)%20Numerical%20Types%20Foundational%20Problems">Numerical Types</a>
+            * <a href="https://github.com/alvarosf07/computer-science-DSA/tree/DSA-dev/1)%20Abstract%20Data%20Types/1)%20Numerical%20Types%20(&%20Math)">Numerical Types</a>
             * <a href="https://github.com/alvarosf07/computer-science-DSA/tree/DSA-dev/1)%20Abstract%20Data%20Types/1)%20Numerical%20Types%20(%26%20Math)/1)%20Math%20Problems">Math Problems</a>
          * Sequences I - Bits & Bytes
             * <a href="https://github.com/alvarosf07/computer-science-DSA/tree/DSA-dev/1)%20Abstract%20Data%20Types/2)%20Bits%20%26%20Bytes">Byte</a>
