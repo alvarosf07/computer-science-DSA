@@ -65,9 +65,59 @@ DSA problems are classified into 5 <code>fields</code>, with its own <code>sub-f
          * Sets & Maps
             * <a href="https://github.com/alvarosf07/computer-science-DSA/tree/DSA-dev/1)%20Abstract%20Data%20Types/5)%20Sets%20%26%20Dictionaries/1)%20Set">Set</a>
             * <a href="https://github.com/alvarosf07/computer-science-DSA/tree/DSA-dev/1)%20Abstract%20Data%20Types/5)%20Sets%20%26%20Dictionaries/2)%20Dictionary">Map/Dictionary</a>
+   
    1. Data Structures
+      * Arrays
+         * <a href="">Array</a>
+      * Linked Lists
+         * <a href="">Linked List</a>
+         * <a href="">Double Linked List</a>
+         * <a href="">Circular Linked List</a>
+      * Hash-Maps
+         * <a href="">Hash Set</a>
+         * <a href="">Hash Map</a>
+      * Trees <br/>
+         * Trees by Nº of Nodes:
+            * <a href="">Tree </a>  (any nº of nodes)
+            * <a href="">Binary Tree</a>  (2 nodes)
+         * Trees by Type of Sorting:
+            * <a href="">Search Tree</a>  (horizontally sorted tree) 
+            * <a href="">Heap</a>  (vertically sorted tree)
+      * Graphs
+         * * <a href="">Graph</a>
+   
    1. Algorithms
+      * Programming Strategy Algorithms
+         * <a href="">Recursion</a>
+         * <a href="">Dynamic Programming</a>
+         * <a href="">Two Pointers</a>
+         * <a href="">Sliding Window</a>
+         * <a href="">Kardane Algorithm</a>
+         * <a href="">Greedy + Backtracking</a>
+      * Search Algorithms
+         * <a href="">Linear/Sequential Search</a>
+         * <a href="">Binary Search</a>
+         * <a href="">Hash Search</a>
+      * Sorting Algorithms
+         * <a href="">Selection Sort</a>
+         * <a href="">Insertion Sort</a>
+         * <a href="">Mergesort</a>
+         * <a href="">Quicksort</a>
+         * <a href="">Heapsort</a>
+         * <a href="">Bubblesort</a>
+      * Graphs Algorithms
+         * <a href="">Coloring Algorithms</a>
+         * <a href="">Path Finding</a>
+         * <a href="">Node Ranking</a>
+         * <a href="">Network Flow Algorithms</a>
+      * Optimization Algorithms
+         * <a href="">Linear Programming</a>
+         * <a href="">Non-Linear Programming</a>
+      * Other Algorithms
+         * <a href="">?</a>
+   
    1. Systems Design (still work in progress)
+   
    1. Coding Interview Problems
 
 <br/>
