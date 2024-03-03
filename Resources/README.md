@@ -1,8 +1,5 @@
 # Resources
 
-### Images
-  * [DSA Mind Map Structure](/Resources/Images/DSA_structure.png)
-
 ### Coding Platforms:
    * LeetCode
    * HackerRank
@@ -26,5 +23,8 @@
      
 ### Other DSA "Best Lists":
    * 
+
+### Images
+  * [DSA Mind Map Structure](/Resources/Images/DSA_structure.png)
 
 <br/>
