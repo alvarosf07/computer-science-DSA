@@ -48,7 +48,7 @@ DSA problems are classified into 5 <code>fields</code>, with its own <code>sub-f
          * Numerical Types (& Math)
             * Numerical Types
             * Math Problems
-         * Bits & Bites
+         * Bits & Bytes
          * String
          * Lists, Stacks & Queues
             * List
@@ -88,7 +88,7 @@ Within each sub-field, problems are classified according to 4 main <code>classes
 
 <ol start="3"> 
   <li> <b>Hard Problems</b> </li>
-  Hard problems are very challenging (and tricky) problems that require not only a good mastery of the specific DSA sub-field, but also good knowledge and skills with algorithms and most importantly: good coding intuition. Most of the hard problems require realizing a certain trick or alternative formulation that makes the question easier to solve. Hard problems are asked in coding interviews mainly oriented to heavy software-developer roles, or certain positions in finance that require strong problem-solving skills. Depending on the coding expertise, hard problems can take from 15 minutes to several hours to solve; although is common to give up before finding a solution. For time optimization purposes, it's recommended to look at the solution of hard problems if no meaningful progress towards the solution has been made after 30-40 minutes.
+  Hard problems are very challenging (and tricky) problems that require not only a good mastery of the specific DSA sub-field, but also good knowledge and skills with algorithms and most importantly: good coding intuition. Most of the hard problems require realizing a certain trick or alternative formulation that makes the question easier to solve. Hard problems are asked in coding interviews mainly oriented to heavy software-developer roles, or certain positions in finance that require strong problem-solving skills. Depending on the coding expertise, hard problems can take from 15 minutes to several hours to solve; although is common to give up before finding a solution. For time optimization purposes, it's recommended to look at the answer to hard problems if no meaningful progress towards the solution has been made after 30-40 minutes.
 </ol> 
 <br/>
 
