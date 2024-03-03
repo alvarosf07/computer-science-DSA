@@ -1,22 +1,24 @@
-## Data Structures and Algorithms - Optimized Problem Collection (DSA-OPC)
+# Data Structures and Algorithms - Optimized Problem Collection (DSA-OPC)
 
 Welcome to the Data Structures and Algorithms Optimized Problem Collection!
 
-This repository houses a carefully curated selection of the most relevant DSA problems sourced from reputable platforms like LeetCode, Elements of Programming Interviews, and other authoritative texts.
+This repository houses my personal curated selection of the most relevant DSA problems sourced from reputable platforms like LeetCode, Elements of Programming Interviews, and other authoritative texts.
 
 <br/>
 
 
 
 
-### Motivation
+## Motivation
 
-Many people do more than 300 coding questions to prepare for coding interviews. It is **NOT NECESSARY** to do this. After reviewing many different sources (LeetCode, HackerRank, GeeksforGeeks, Elements of Programming Interviews... see all below) I have collected a curated selection of the ~100 most relevant problems, organized by categories, classes and difficulty levels. 
+Many people do more than 300 coding questions to prepare for coding interviews. It is **NOT NECESSARY** to do this. After reviewing many different sources (LeetCode, HackerRank, GeeksforGeeks, Elements of Programming Interviews... see all below) I have put together a curated selection of the ~100 most relevant DSA problems, organized by categories, classes and difficulty levels. 
 
-This collection aims to simplify your learning curve by providing a structured and focused selection of 5-10 problems for each DSA category, that will help you understand the "general type" of questions so you can reduce your workload by 80%, focusing only on the 20% of problems that matters the most.
+This collection aims to simplify the learning curve to prepare for DSA coding interviews, by providing a structured and optimized selection of 5-10 problems for each DSA category, that will help you understand the "general type" of questions so you can reduce your workload by 80%, focusing only on the 20% of problems that matters the most.
 
 #### Author's Note: 
-> There are plenty of "Best lists" for DSA that can be found online (see resources below). The purpose of this repository is not to be the "ultimate" collection of DSA problems. I decided to create this collection to better understand the field of DSA while I prepared for coding interviews, and help others do the same for free. It includes problems that I've come across and from my *personal* point of view, I've found most relevant. At the same time, it's organized following a structure I personally find intuitive and practical for understanding of Data Structures and Algorithms, but it doesn't intend to be a 100% unique representation of reality.
+> There are plenty of "Best lists" for DSA that can be found online (see resources below). The purpose of this repository is not to be the "ultimate" collection of DSA problems. I decided to create this collection to better understand the field of DSA while I was preparing for coding interviews, and help others do the same for free. It includes problems that I've come across and I've found most relevant from my *personal* point of view. At the same time, it's organized following a structure I personally find intuitive and practical for the global understanding of Data Structures and Algorithms, but it doesn't intend to be a 100% unique representation of reality.
+> 
+> With that being said, and although this collection is designed based on my personal understanding of the subject, I'm more than happy to receive feedback, suggestions and improvements that can help the community in any way!
 
 <br/>
 
@@ -24,7 +26,7 @@ This collection aims to simplify your learning curve by providing a structured a
 
 
 
-### Features
+## Features
 
 - **Curated Selection:** I've handpicked the most relevant problems to ensure you focus your time and effort on mastering essential concepts.
 - **Optimized Learning:** The collection is designed with the 80/20 principle in mind: focusing on achieving 80% of the learning with just 20% of the effort, saving you valuable time and energy.
@@ -37,7 +39,7 @@ This collection aims to simplify your learning curve by providing a structured a
 
 
 
-### Organization
+## Organization
 DSA problems are classified into 5 fields:
    1. Abstract Data Types
    2. Data Structures
@@ -82,7 +84,7 @@ Each field is divided into subsequent sub-fields, as depicted in the mind map ab
 
 
 
-### Getting Started
+## Getting Started
 
 1. **Explore Categories:** Browse through our organized categories to find problems that align with your interests and skill level.
 2. **Challenge Yourself:** Dive into the problems, solve them, and test your understanding of key DSA concepts.
@@ -94,16 +96,16 @@ Each field is divided into subsequent sub-fields, as depicted in the mind map ab
 
 
 
-### Contributing
+## Contributing
 
 We welcome contributions from the community to enhance and expand our problem collection. If you have suggestions for additional problems, improvements to existing ones, or any other feedback, please feel free to contribute!
 
-<br/r>
+<br/>
 
 
 
 
-### Let's Get Started!
+## Let's Get Started!
 
 Ready to embark on your journey to DSA mastery? Explore the collection, challenge yourself with the problems, and let's take your programming skills to new heights together!
 
