@@ -2,7 +2,7 @@
 
 Welcome to the Data Structures and Algorithms Optimized Problem Collection!
 
-This repository houses my personal curated selection of the most relevant DSA problems sourced from reputable platforms like LeetCode, Elements of Programming Interviews, and other authoritative texts.
+This repository houses my personal structured and curated collection of the most relevant DSA problems, sourced from reputable platforms like LeetCode, Elements of Programming Interviews... and other authoritative texts.
 
 <br/>
 
@@ -41,6 +41,12 @@ This collection aims to simplify the learning curve to prepare for DSA coding in
 
 ## Contents & Organization
 DSA problems are classified into <code>fields</code>, <code>sub-fields</code>, <code>classes</code> of problems and <code>difficulty</code> levels.
+
+<brc/>
+
+<img src="/Resources/Images/DSA_structure.png" width="600">
+
+<brc/>
 
 ### Fields & Subfields
 DSA problems are classified into 5 <code>fields</code>, with its own <code>sub-fields</code>:
