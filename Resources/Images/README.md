@@ -1,29 +1,30 @@
-## Resources
+# Resources
 
-#### Images
+### Images
+  * [DSA Mind Map Structure](/Resources/Images/DSA_structure.png)
 
-#### Coding Platforms:
+### Coding Platforms:
    * LeetCode
    * HackerRank
    * 
 
-#### DSA Websites:
+### DSA Websites:
    * GeeksforGeeks
    * Google Tech Dev Guide
 
-#### DSA Channels/Accounts:
+### DSA Channels/Accounts:
    * f
 
-#### DSA Courses:
+### DSA Courses:
    * DataCamp
    * Coursera
    * Udemy
 
-#### Books:
+### Books:
    * Elements of Coding Interviews
    * Grokking Algorithms
      
-#### Other DSA "Best Lists":
+### Other DSA "Best Lists":
    * 
 
 <br/>
