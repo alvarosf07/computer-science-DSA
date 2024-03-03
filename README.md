@@ -52,17 +52,17 @@ DSA problems are classified into <code>fields</code>, <code>sub-fields</code>, <
 DSA problems are classified into 5 <code>fields</code>, with its own <code>sub-fields</code>:
    1. Abstract Data Types
          * Numerical Types (& Math)
-            * Numerical Types
-            * Math Problems
-         * Bits & Bytes
-         * String
+            * [Numerical Types](/1%29%20Abstract%20Data%20Types/1%29%20Numerical%20Types%20%28%26%20Math%29/0%28%20Numerical%20Types%20Foundational%20Problems)
+            * [Math Problems]
+         * [Bits & Bytes]
+         * [String]
          * Lists, Stacks & Queues
-            * List
-            * Stack
-            * Queue 
+            * [List]
+            * [Stack]
+            * [Queue]
          * Sets & Dictionaries
-            * Set
-            * Dictionary
+            * [Set]
+            * [Dictionary]
    1. Data Structures
    1. Algorithms
    1. Systems Design (still work in progress)
