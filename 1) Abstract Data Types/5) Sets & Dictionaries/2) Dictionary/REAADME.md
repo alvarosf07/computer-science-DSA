@@ -1,0 +1,10 @@
+# Dictionary
+
+<p> A dictionary is a set of <code>key</code>:<code>value</code> pairs, with the requirement that the keys are unique (within one dictionary). The main operations on a dictionary are storing a value with some key and extracting the value given the key.</p>
+
+<p> In Python, a pair of braces creates an empty dictionary: <code>{}</code>. Placing a comma-separated list of <code>key</code>:<code>value</code> pairs within the braces adds initial <code>key</code>:<code>value</code> pairs to the dictionary.</p>
+
+
+
+
+
