@@ -1,0 +1,184 @@
+# [LeetCode 125 - Valid Palindrome](https://leetcode.com/problems/valid-palindrome)           ${\textsf{\color{lightgreen} [Easy] }}$
+
+
+## Description
+
+<p>A phrase is a <strong>palindrome</strong> if, after converting all uppercase letters into lowercase letters and removing all non-alphanumeric characters, it reads the same forward and backward. Alphanumeric characters include letters and numbers.</p>
+
+<p>Given a string <code>s</code>, return <code>true</code><em> if it is a <strong>palindrome</strong>, or </em><code>false</code><em> otherwise</em>.</p>
+
+<p>&nbsp;</p>
+<p><strong class="example">Example 1:</strong></p>
+
+<pre>
+<strong>Input:</strong> s = &quot;A man, a plan, a canal: Panama&quot;
+<strong>Output:</strong> true
+<strong>Explanation:</strong> &quot;amanaplanacanalpanama&quot; is a palindrome.
+</pre>
+
+<p><strong class="example">Example 2:</strong></p>
+
+<pre>
+<strong>Input:</strong> s = &quot;race a car&quot;
+<strong>Output:</strong> false
+<strong>Explanation:</strong> &quot;raceacar&quot; is not a palindrome.
+</pre>
+
+<p><strong class="example">Example 3:</strong></p>
+
+<pre>
+<strong>Input:</strong> s = &quot; &quot;
+<strong>Output:</strong> true
+<strong>Explanation:</strong> s is an empty string &quot;&quot; after removing non-alphanumeric characters.
+Since an empty string reads the same forward and backward, it is a palindrome.
+</pre>
+
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
+
+<ul>
+	<li><code>1 &lt;= s.length &lt;= 2 * 10<sup>5</sup></code></li>
+	<li><code>s</code> consists only of printable ASCII characters.</li>
+</ul>
+
+<br/>
+
+## Solutions
+
+### Solution 1: Two Pointers
+
+We use two pointers $i$ and $j$ to point to the two ends of the string $s$, and then loop through the following process until $i \geq j$:
+
+1. If $s[i]$ is not a letter or a number, move the pointer $i$ one step to the right and continue to the next loop.
+2. If $s[j]$ is not a letter or a number, move the pointer $j$ one step to the left and continue to the next loop.
+3. If the lowercase form of $s[i]$ and $s[j]$ are not equal, return `false`.
+4. Otherwise, move the pointer $i$ one step to the right and the pointer $j$ one step to the left, and continue to the next loop.
+
+At the end of the loop, return `true`.
+
+The time complexity is $O(n)$, where $n$ is the length of the string $s$. The space complexity is $O(1)$.
+
+<!-- tabs:start -->
+
+#### Python:
+```python
+class Solution:
+    def isPalindrome(self, s: str) -> bool:
+        i, j = 0, len(s) - 1
+        while i < j:
+            if not s[i].isalnum():
+                i += 1
+            elif not s[j].isalnum():
+                j -= 1
+            elif s[i].lower() != s[j].lower():
+                return False
+            else:
+                i, j = i + 1, j - 1
+        return True
+```
+
+#### JAVA:
+```java
+class Solution {
+    public boolean isPalindrome(String s) {
+        int i = 0, j = s.length() - 1;
+        while (i < j) {
+            if (!Character.isLetterOrDigit(s.charAt(i))) {
+                ++i;
+            } else if (!Character.isLetterOrDigit(s.charAt(j))) {
+                --j;
+            } else if (Character.toLowerCase(s.charAt(i)) != Character.toLowerCase(s.charAt(j))) {
+                return false;
+            } else {
+                ++i;
+                --j;
+            }
+        }
+        return true;
+    }
+}
+```
+
+#### C++:
+```cpp
+class Solution {
+public:
+    bool isPalindrome(string s) {
+        int i = 0, j = s.size() - 1;
+        while (i < j) {
+            if (!isalnum(s[i])) {
+                ++i;
+            } else if (!isalnum(s[j])) {
+                --j;
+            } else if (tolower(s[i]) != tolower(s[j])) {
+                return false;
+            } else {
+                ++i;
+                --j;
+            }
+        }
+        return true;
+    }
+};
+```
+
+<!-- tabs:end -->
+
+<br/>
+
+### Solution 2:  Single Pointer
+
+Similar idea to the previous solution, but using only one pointer and indexing both from the beginning and from the end of the word.
+
+The time complexity is $O(n/2)$, where $n$ is the length of the string $s$. The space complexity is $O(1)$.
+
+<!-- tabs:start -->
+
+#### Python:
+```python
+class Solution:
+    def isPalindrome(self, s: str) -> bool:
+        for i in range (len(s)):
+        if s[i] != s[-i-1]: return False
+        if i>= len(s)/2 - 1: return True
+```
+
+```python
+class Solution:
+    def isPalindrome(self, s: str) -> bool:
+        i = 0
+	while i <= len(s)/2 -1:
+		if s[i] != s[-i-1]: return False
+		i += 1
+	return True
+```
+
+<!-- tabs:end -->
+
+<br/>
+
+### Solution 3: String Slicing
+
+Using string slicing.
+
+<!-- tabs:start -->
+
+#### Python:
+```python
+class Solution:
+    def isPalindrome(self, s: str) -> bool:
+        return s == s[::-1]
+```
+
+Same but checking for lowercase and alphanumeric values:
+```python
+class Solution:
+    def isPalindrome(self, s: str) -> bool:
+        s = [i for i in s.lower() if i.isalnum()]
+    	return s == s[::-1]
+```
+
+<!-- tabs:end -->
+
+
+<!-- end -->
