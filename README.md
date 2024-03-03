@@ -11,7 +11,7 @@ This repository houses my personal curated selection of the most relevant DSA pr
 
 ## Motivation
 
-Many people do more than 300 coding questions to prepare for coding interviews. It is **NOT NECESSARY** to do this. After reviewing many different sources (LeetCode, HackerRank, GeeksforGeeks, Elements of Programming Interviews... see all below) I have put together a curated selection of the ~100 most relevant DSA problems, organized by <code>fields</code>, <code>sub-fields</code>, <code>classes</code> of problems and <code>difficulty</code> levels. 
+Many people do more than 300 coding questions to prepare for coding interviews. It is **NOT NECESSARY** to do this. After reviewing many different sources (LeetCode, HackerRank, GeeksforGeeks, Elements of Programming Interviews... see all below) I have put together a curated selection of the ~100 most relevant DSA problems and their solutions, organized by <code>fields</code>, <code>sub-fields</code>, <code>classes</code> of problems and <code>difficulty</code> levels. 
 
 This collection aims to simplify the learning curve to prepare for DSA coding interviews, by providing a structured and optimized selection of 5-10 problems for each DSA category, that will help you understand the "general type" of questions so you can reduce your workload by 80%, focusing only on the 20% of problems that matters the most.
 
@@ -100,7 +100,6 @@ Within each sub-field, problems are classified according to 4 main classes, whic
 
 
 
-
 ## Getting Started
 
 1. **Explore Categories:** Browse through our organized categories to find problems that align with your interests and skill level.
@@ -122,9 +121,42 @@ We welcome contributions from the community to enhance and expand our problem co
 
 
 
+
+## Resources
+Most of the problems have been extracted from the following sources. Solutions for the exercises are not all my own, but usually a combination of my personal implementation and the best solutions I've found for each problem. I've made an effort to reference the original source of the answer for those problems/solutions that are not my own, but feedback is appreciated if this is not the case for some problems.
+
+#### Coding Platforms:
+   * LeetCode
+   * HackerRank
+   * 
+
+#### DSA Websites:
+   * GeeksforGeeks
+   * Google Tech Dev Guide
+
+#### DSA Channels/Accounts:
+   * f
+
+#### DSA Courses:
+   * DataCamp
+   * Coursera
+   * Udemy
+
+#### Books:
+   * Elements of Coding Interviews
+   * Grokking Algorithms
+     
+#### Other DSA "Best Lists":
+   * 
+
+<br/>
+
+
+
+
+
 ## Let's Get Started!
 
 Ready to embark on your journey to DSA mastery? Explore the collection, challenge yourself with the problems, and let's take your programming skills to new heights together!
 
 Happy coding! 🚀
-
