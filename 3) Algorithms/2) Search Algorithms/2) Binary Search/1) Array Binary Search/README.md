@@ -61,7 +61,7 @@ Binary search is most commonly used in scenarios where:
 
 
 
-# 2. Shifted Binary Search
+# 2. Shifted Binary Search (Array)
 
 > Shifted Binary Search is a variation of the traditional binary search algorithm that is used to search for a target element in a sorted array that has been rotated or shifted. This means the array is not strictly sorted in ascending or descending order, but it is still possible to apply binary search with slight modifications.
 
