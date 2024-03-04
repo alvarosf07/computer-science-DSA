@@ -1,4 +1,4 @@
-# Path Finding Algorithms: A Brief Introduction
+# Path Finding Algorithms
 
 Path finding algorithms are a class of algorithms used to find the shortest path or optimal route between two points in a graph or grid. These algorithms are commonly used in robotics, video games, geographic information systems (GIS), and network routing protocols.
 
