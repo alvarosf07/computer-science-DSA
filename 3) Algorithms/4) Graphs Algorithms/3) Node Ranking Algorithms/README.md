@@ -1,4 +1,4 @@
-# Node Ranking Algorithms: A Brief Introduction
+# Node Ranking Algorithms
 
 > Node ranking algorithms are a class of algorithms used to assign ranks or scores to nodes in a graph based on various criteria. These algorithms are commonly used in social networks, search engines, recommendation systems, and network analysis.
 
