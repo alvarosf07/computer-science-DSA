@@ -1,7 +1,8 @@
 # Sliding Window
 
 > The sliding window technique is an algorithmic approach that involves using a fixed-size window to traverse a sequence (such as an array or a string) and solve a specific problem efficiently.
-
+> <br/>
+> <br/>
 > The window slides across the sequence, and its size remains constant as it moves from left to right or vice versa. By adjusting the position of the window and maintaining certain properties or constraints, we can efficiently solve a wide range of problems.
 
 <br/>
