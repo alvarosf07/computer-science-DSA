@@ -1,4 +1,4 @@
-# Binary Search: A Brief Introduction
+# Binary Search (Array)
 
 > Binary search is an efficient search algorithm that works by repeatedly dividing the search interval in half. It compares the target value with the middle element of the array and decides whether to continue searching in the left or right half of the array. This process is repeated until the target value is found or the search interval is empty.
 
