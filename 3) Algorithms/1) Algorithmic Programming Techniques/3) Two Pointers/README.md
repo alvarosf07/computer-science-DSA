@@ -32,7 +32,8 @@ The two pointers technique works by manipulating the positions of two pointers w
 
 ## Example of Two Pointers Technique:
 
-Consider the problem of finding a pair of elements in a sorted array that sum up to a given target value. We can use the two pointers technique to efficiently solve this problem:
+Consider the problem of finding a pair of elements in a sorted array that sum up to a given target value. 
+In the following example, the two_sum function uses the two pointers technique to find a pair of elements in the sorted array nums that sum up to the target value:
 
 ```python
 def two_sum(nums, target):
@@ -52,7 +53,7 @@ nums = [1, 2, 3, 4, 5]
 target = 9
 print("Indices of elements summing up to", target, ":", two_sum(nums, target))
 ```
-In this example, the two_sum function uses the two pointers technique to find a pair of elements in the sorted array nums that sum up to the target value.
+
 
 
 <br/>
