@@ -67,4 +67,4 @@ print("Maximum sum of subarray of size", k, ":", max_subarray_sum(nums, k))
 
 The sliding window technique is a versatile and efficient algorithmic approach that enables programmers to solve a variety of problems involving arrays, strings, or other sequences with optimal or near-optimal time complexity. 
 
-The Sliding Window technique is usually used to efficiently solve problems that require searching, manipulation, or analysis of subsequences.
+The Sliding Window technique is usually a good tool to use when facing problems that require searching, manipulation, or analysis of subsequences.
