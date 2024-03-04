@@ -34,7 +34,7 @@ Greedy algorithms work by iteratively making locally optimal choices at each ste
 
 ## Example of Greedy Algorithm:
 
-Consider the problem of finding the minimum number of coins needed to make change for a given amount of money. We can use a greedy algorithm to efficiently solve this problem:
+An example of a problem that can be solved with a greedy algorithm is finding the minimum number of coins needed to make change for a given amount of money:
 
 ```python
 def min_coins(coins, amount):
