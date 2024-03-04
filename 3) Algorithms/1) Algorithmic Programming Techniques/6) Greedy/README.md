@@ -29,6 +29,10 @@ Greedy algorithms work by iteratively making locally optimal choices at each ste
 
 3. **Optimality:** While greedy algorithms do not guarantee optimal solutions in all cases, they can often find solutions that are close to optimal or satisfactory for many practical purposes.
 
+4. **No Backtracking:** Once a decision is made, it's not reconsidered later.
+
+
+
 <br/>
 
 
