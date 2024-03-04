@@ -1,7 +1,7 @@
 # Greedy Algorithms
 
 > Greedy algorithms are algorithms that attempt to solve problems heuristically by making locally optimal choices at each step, in the hope of finding a global optimum.
-> <br/>
+> 
 > These algorithms make decisions based solely on the information available at the current step, without considering the potential consequences of those decisions on future steps.
 > 
 > Despite their simplicity, greedy algorithms can often find efficient solutions to a wide range of problems.
