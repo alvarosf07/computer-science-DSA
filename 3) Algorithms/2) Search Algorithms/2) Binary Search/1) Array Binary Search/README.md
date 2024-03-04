@@ -98,7 +98,7 @@ Shifted Binary Search works similarly to the traditional binary search algorithm
 
 ## 2.4. Key Features of Shifted Binary Search:
 
-1. **Efficiency:** Shifted Binary Search maintains the `O(n)` efficiency of traditional binary search algorithms, with slight modifications to handle rotation or shift in the array.
+1. **Efficiency:** Shifted Binary Search maintains the `O(log n)` efficiency of traditional binary search algorithms, with slight modifications to handle rotation or shift in the array.
 
 2. **Versatility:** Shifted Binary Search can be applied to sorted arrays that have been rotated or shifted, making it useful in scenarios where the array may not be strictly sorted.
 
@@ -116,10 +116,11 @@ Shifted Binary Search is most commonly used in scenarios where:
 ## 2.6. Example of Shifted Binary Search:
 
 
-Consider the problem of finding the index of the target element in the following shifted array:
+Consider the problem of finding the index of the target element in the following shifted array.
+> Shifted Array: [5, 6, 7, 8, 9, 10, 1, 2, 3, 4]
+
 Applying Shifted Binary Search, we would first identify the pivot point (index 5) where the rotation occurs. Then, we would apply binary search separately to the two halves of the array to find the target element.
 
-Original Array: [5, 6, 7, 8, 9, 10, 1, 2, 3, 4]
 
 ```python
 def find_pivot(arr):
@@ -176,9 +177,22 @@ else:
 
 ```
 
-The overall time complexity of the Shifted Binary Search algorithm is dominated by the time complexity of finding the pivot point, as it is the most time-consuming step.
-Therefore, the overall time complexity is O(log n), where n is the number of elements in the array.
+#### Time Complexity:
+1. **Finding Pivot Point (`find_pivot` function):**
+   - This step involves performing binary search to find the pivot point in the shifted array.
+   - The time complexity of binary search is O(log n), where n is the number of elements in the array.
+   - Therefore, finding the pivot point takes O(log n) time.
 
+2. **Binary Search (`binary_search` function):**
+   - After finding the pivot point, the algorithm performs binary search in one of the two halves of the array.
+   - The time complexity of binary search is O(log n), where n is the number of elements in the array.
+   - Therefore, binary search in the worst case takes O(log n) time.
+
+3. **Overall Time Complexity:**
+   - The overall time complexity of the Shifted Binary Search algorithm is dominated by the time complexity of finding the pivot point, as it is the most time-consuming step.
+   - Therefore, the overall time complexity is O(log n), where n is the number of elements in the array.
+
+In summary, the Shifted Binary Search algorithm implemented in Python has a time complexity of `O(log n)`, making it an efficient approach for searching for a target element in a shifted array.
 
 
 
