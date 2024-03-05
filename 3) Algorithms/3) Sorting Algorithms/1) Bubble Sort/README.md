@@ -6,20 +6,20 @@ Bubble sort is a simple sorting algorithm that repeatedly steps through the list
 
 ## Steps of Bubble Sort Algorithm
 
-1. **Step 1:**
-   - Start with the first element in the list.
+* **Step 1**
+  - Start with the first element in the list.
 
-2. **Step 2:**
-   - Compare the current element with the next element.
+* **Step 2**
+  - Compare the current element with the next element.
 
-3. **Step 3:**
-   - If the current element is greater than the next element, swap them.
+* **Step 3**
+  - If the current element is greater than the next element, swap them.
 
-4. **Step 4:**
-   - Move to the next pair of elements and repeat steps 2 and 3.
+* **Step 4**
+  - Move to the next pair of elements and repeat steps 2 and 3.
 
-5. **Step 5:**
-   - Continue this process until the entire list is sorted.
+* **Step 5**
+  - Continue this process until the entire list is sorted.
 
 <br/>
 
@@ -29,9 +29,14 @@ Bubble sort compares adjacent elements and swaps them if necessary, gradually so
 
 ![Bubble Sort Visualization](https://upload.wikimedia.org/wikipedia/commons/c/c8/Bubble-sort-example-300px.gif)
 
+<br/>
 
+## Time Complexity
+
+The time complexity of Bubble sort is `O(n^2)`, where n is the number of elements in the list. This is because the algorithm involves nested loops, with each loop iterating over the entire list.
 
 <br/>
+
 
 ## Code Implementation
 
