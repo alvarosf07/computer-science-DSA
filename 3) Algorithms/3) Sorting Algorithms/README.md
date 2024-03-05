@@ -6,7 +6,22 @@ Sorting algorithms are fundamental tools in computer science and are used to arr
 
 ## Most Relevant Sorting Algorithms
 
-Below there's an introduction to eight of the most relevant sorting algorithms, classified from worst to best time complexity. Further details about the algorithms, their implementations and additional exercises can be found in the sub-directories of this folder.
+Below there's an introduction to eight of the most relevant sorting algorithms, classified from worst to best time complexity. Further details about the algorithms, their implementations and additional exercises can be found in the sub-directories of the present folder.
+
+<br/>
+
+| Algorithm      | Time Complexity | Description                                                   |
+|----------------|-----------------|---------------------------------------------------------------|
+| Bubble Sort    | O(n^2)          | Useful for educational purposes; not practical for large datasets.   |
+| Selection Sort | O(n^2)          | Simple and easy to implement, but inefficient for large datasets.    |
+| Insertion Sort | O(n^2)          | Efficient for small datasets or nearly sorted lists.            |
+| Merge Sort     | O(n log n)      | Suitable for sorting large datasets efficiently.                |
+| Quick Sort     | O(n log n)      | Efficient for most cases, but may degrade to O(n^2) in worst case.  |
+| Heap Sort      | O(n log n)      | In-place and does not require additional space.                |
+| Counting Sort  | O(n + k)        | Ideal for sorting integers with a small range of values.       |
+| Radix Sort     | O(nk)           | Efficient for sorting large integers or strings.               |
+
+<br/>
 
 1. **Bubble Sort:**
    - Time Complexity: O(n^2)
