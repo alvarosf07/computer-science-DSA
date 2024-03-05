@@ -29,7 +29,7 @@ Counting sort is efficient if the range of input data is not significantly great
 
 Counting sort counts the occurrences of each unique element in the input list and uses this information to determine the position of each element in the sorted output list.
 
-![Counting Sort Visualization](https://upload.wikimedia.org/wikipedia/commons/2/25/Counting_Sort_Animation.gif)
+![Counting Sort Visualization](https://example.com/counting_sort.gif)
 
 <br/>
 
