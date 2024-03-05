@@ -49,4 +49,4 @@ def quick_sort(arr):
 arr = [64, 25, 12, 22, 11]
 sorted_arr = quick_sort(arr)
 print("Sorted array:", sorted_arr)
-'''
+```
