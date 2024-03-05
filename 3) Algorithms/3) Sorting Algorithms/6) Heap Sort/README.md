@@ -13,7 +13,7 @@ Heap sort is a comparison-based sorting algorithm that builds a heap from the in
   - Repeatedly extract the maximum element from the heap and place it at the end of the sorted list.
 
 * Step 3:
-  - Reduce the size of the heap by one and heapify the remaining elements.
+  - Reduce the size of the heap by one and "heapify" the remaining elements.
 
 <br/>
 
