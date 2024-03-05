@@ -2,10 +2,6 @@
 
 Radix sort is a non-comparison-based sorting algorithm that sorts elements by first grouping the individual digits of the same place value and sorting them according to their increasing/decreasing order.
 
-<br/>
-
-## Introduction
-
 Radix sort works by sorting elements based on their digits from the least significant digit (LSD) to the most significant digit (MSD) or vice versa. It is often used to sort numbers represented in decimal, binary, or hexadecimal notation.
 
 <br/>
