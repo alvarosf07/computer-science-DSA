@@ -18,13 +18,13 @@ Visualizing a linked list as a train of data compartments can help understand th
 
 ## Characteristics
 
-| Characteristic                | Time Complexity | Description                                                |
+| Characteristic                | Linked List Specs | Description                                                |
 |-------------------------------|-----------------|------------------------------------------------------------|
-| Memory Time Allocation| -               | Compiled at runtime (memory is not pre-allocated)                    |
-| Memory Spatial Allocation | Dispersed      | Nodes are not necessarily stored in contiguous memory      |
-| Memory Address - Space          | Limited by system memory | Dynamically allocated, theoretically infinite       |
-| Memory Address - Types | -             | Typically allows any data type                             |
-| Memory Address - Reference | Pointer          | Nodes reference the next node using pointers                |
+| Memory Time Allocation        | -               | Compiled at runtime (memory is not pre-allocated)                    |
+| Memory Spatial Allocation     | Dispersed       | Nodes are not necessarily stored in contiguous memory      |
+| Memory Address - Space        | Dynamic         | Dynamically allocated, theoretically infinite (only limited by memory space)       |
+| Memory Address - Types        | -               | Typically allows any data type                             |
+| Memory Address - Reference    | Pointer         | Nodes reference the next node using pointers                |
 | Element Access                | O(n)            | Sequential traversal required for access                   |
 | Element Modification          | O(n)            | Requires traversal to find and modify specific element     |
 | Element Insertion             | O(1)            | Insertion at the beginning (if head is known), otherwise O(n)|
@@ -35,14 +35,16 @@ Visualizing a linked list as a train of data compartments can help understand th
 ## Linked List Advantages & Disadvantages
 
 #### Advantages:
+- **Memory Spatial Allocation**: Linked lists can accommodate elements of different data types and sizes.
 - **Dynamic Size**: Linked lists can grow and shrink in size dynamically, unlike arrays with fixed size.
 - **Efficient Insertion and Deletion**: Insertion and deletion operations can be performed efficiently, especially at the beginning of the list.
-- **Versatility**: Linked lists can accommodate elements of different data types and sizes.
+
 
 #### Disadvantages:
-- **Memory Overhead**: Additional memory is required to store pointers for each node, leading to higher overhead compared to arrays.
-- **Sequential Access**: Accessing elements requires sequential traversal, which can be inefficient for large lists.
+- **Sequential Element Access**: Accessing elements requires sequential traversal, which can be inefficient for large lists.
 - **Pointer Complexity**: Managing pointers can introduce complexity and potential errors.
+- **Memory Overhead**: Additional memory is required to store pointers for each node, leading to higher overhead compared to arrays.
+
 
 #### Linked lists are best used when:
 - The size of the data collection is unknown or varies.
