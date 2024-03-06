@@ -34,7 +34,7 @@ Arrays can be visualized as a sequential arrangement of elements, where each ele
 
 <br/>
 
-## Array Advantages
+## Array Advantages & Disadvantages
 
 Arrays offer several advantages over other data structures:
 - **Efficient Memory Spatial Allocation**: Arrays use contiguous memory allocation, reducing overhead.
