@@ -1,6 +1,6 @@
 # Data Structures I - Array
 
-Arrays are fundamental data structures that allow you to store and access a collection of elements of the same data type in contiguous memory locations. 
+Arrays are fundamental data structures that allow storing and accessing a collection of elements of the same data type in contiguous memory locations. 
 Arrays are among the oldest and most important data structures, they offer a convenient way to organize and manipulate data efficiently and are used by almost every program.
 
 <br/>
