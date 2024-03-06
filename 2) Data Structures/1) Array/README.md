@@ -6,7 +6,7 @@ Arrays are among the oldest and most important data structures; they offer a con
 <br/>
 
 > An array is a linear data structure consisting of a collection of elements (pre)allocated in contiguous spaces in the computer memory address.
-> Each element in an array occupies the same amount of space in memory and can be identified by at least one array index or key.
+> Each element in an array occupies the same amount of space in memory and can be identified by at least one index or key.
 
 <br/>
 
