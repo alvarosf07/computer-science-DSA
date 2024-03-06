@@ -22,11 +22,11 @@ Arrays can be visualized as a sequential arrangement of elements, where each ele
 
 | Characteristic                      | Time Complexity | Description                                                |
 |-------------------------------------|-----------------|------------------------------------------------------------|
-| Memory Address - Time of Allocation | O(1)            | Compiled at initialization (arrays require pre-allocating a big chunk of sequential memory to store data) |
-| Memory Address - Spatial Allocation | -               | Contiguous memory allocation                               |
+| Memory Time Allocation              | O(1)            | Compiled at initialization (arrays require pre-allocating a big chunk of sequential memory to store data) |
+| Memory Spatial Allocation           | -               | Contiguous memory allocation                               |
 | Memory Address - Space              | -               | Fixed-size (determined at initialization)                    |
-| Memory Address - Data Types         | -               | Homogeneous data types                                     |
-| Memory Address - Data Reference     | -               | Elements are accessed using their index or position in the array |
+| Memory Address - Types              | -               | Homogeneous data types                                     |
+| Memory Address - Reference          | -               | Elements are accessed using their index or position in the array |
 | Element Access                      | O(1)            | Direct access using index                                  |
 | Element Modification                | O(1)            | Direct modification using index                            |
 | Element Insertion                   | O(n)            | Requires shifting elements                                 |
@@ -36,18 +36,18 @@ Arrays can be visualized as a sequential arrangement of elements, where each ele
 
 ## Array Advantages & Disadvantages
 
-Arrays offer several advantages over other data structures:
+#### Advantages:
 - **Efficient Memory Spatial Allocation**: Arrays use contiguous memory allocation, reducing overhead.
 - **Efficient Element Access and Modification**: Elements can be accessed directly using their index, with constant time complexity.
 - **Simple Implementation**: Arrays are straightforward to implement and use.
   
-Disadvantages:
+#### Disadvantages:
 - **Fixed Size**: Most arrays have a fixed size, limiting flexibility.
 - **Homogeneous Data**: Arrays typically store elements of the same data type, restricting versatility.
 - **Inefficient Insertion and Deletion**: Insertion and deletion operations may require shifting elements, leading to inefficiency, with linear time complexity.
 
 
-Arrays are best used when:
+#### Arrays are best used when:
 - Random access to elements is required.
 - Memory usage needs to be optimized.
 - The size of the data collection is known and fixed.
