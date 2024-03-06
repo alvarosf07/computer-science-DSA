@@ -1,4 +1,4 @@
-# Hash Maps
+# Data Structures III - Hash Map
 
 > A Hash-Map is a collection of elements (pre)allocated in NON-contiguous spaces in the computer memory address. Each element in an array occupies the same amount of space in memory.
 > 
