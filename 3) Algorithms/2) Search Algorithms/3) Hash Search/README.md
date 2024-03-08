@@ -110,7 +110,7 @@ Hash functions operate by processing the input data through a series of mathemat
 
 ## 2.4. Collisions:
 
-There is a problem with Hash Tables: sometimes the hash function returns the same memory position for two different inputs. That’s called a hash collision. 
+There is a problem with Hash Tables. Sometimes the hash function returns the same memory position for two different inputs. That’s called a hash collision. 
 
 Hash functions aim to minimize collisions, but they are inevitable due to the finite size of the output space compared to the infinite input space. 
 
