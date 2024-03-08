@@ -63,4 +63,31 @@ Visualize a hash map as a dictionary where each word (key) is associated with it
 > A Hash Function is a special function that takes the data to store as input, and outputs a random-looking number. That number is interpreted as the memory position the item will be stored at.
 
 Hash functions are explained in detail in the <a href="https://github.com/alvarosf07/computer-science-DSA/blob/master/3)%20Algorithms/2)%20Search%20Algorithms/3)%20Hash%20Search/README.md#2-hash-functions">Hash Functions</a> section.
+
+<br/>
+<br/>
+
+# 3. Types of Hash Maps by Hashing Methodology
+Based on the type of hash function, it's possible to find different types of hash maps:
+
+### Chaining Hash Map
+Chaining Hash Maps use chaining as collision resolution mechanism to handle situations where multiple keys hash to the same index. In Chaining Hash Maps, collisions are handled by maintaining a linked list at each bucket. When a collision occurs, the key-value pair is added to the linked list at that bucket.
+
+### Open Addressing Hash Maps
+Open addressing is a method used in hash tables to resolve collisions that occur when two different keys hash to the same index. In open addressing, when a collision happens, instead of storing the colliding item in the same slot (index) in the hash table, the algorithm looks for the next available slot (probe sequence) in the table until an empty slot is found. There are several techniques for probe sequences, including linear probing, quadratic probing, and double hashing.
+
+ * **Linear Probing Hash Map** -  The algorithm checks consecutive slots in the table until an empty slot is found.
+ * **Quadratic Probing Hash Map** - The algorithm checks slots using a quadratic function until an empty slot is found.
+ * **Double Hashing Hash Map** - The algorithm uses a second hash function to determine the step size for probing.
+
+### Robin Hood Hash Map
+In this variant, keys are stored in a linear array, and when a collision occurs, the key with the longest probe sequence is moved closer to its original hashed position.
+
+### Cuckoo Hood Hash Map
+This hash map uses multiple hash functions and two or more hash tables. If a collision occurs in one table, the element is moved to its alternative table until a vacant spot is found.
+
+###  Perfect Hash Map
+These hash maps are designed to have minimal or no collisions for a specific set of keys. They are often used when the set of keys is known in advance.
+
+
 <br/>
