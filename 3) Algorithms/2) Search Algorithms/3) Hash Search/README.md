@@ -126,8 +126,8 @@ Hash functions typically handle collisions using one of the following methods:
 1. **Separate Chaining:** In this method, each bucket in the hash table contains a linked list of key-value pairs with the same hash value. When a collision occurs, the new key-value pair is appended to the linked list.
 
 2. **Open Addressing:** In this method, when a collision occurs, the algorithm probes for an empty slot (i.e., a slot without a key-value pair) in the hash table and inserts the new key-value pair there. Various probing techniques can be used to find an empty slot, such as:
-    * **Linear probing:** When there is a collision, the key is moved to the next EMPTY index to the right in the array. Problem is that it increases probability of clustering among highly repeated commands, and that makes it inefficient to go over many occupied arrays every time a collision occurs
-    * **Quadratic probing** 
+    * **Linear Probing:** When there is a collision, the key is moved to the next EMPTY index to the right in the array. Problem is that it increases probability of clustering among highly repeated commands, and that makes it inefficient to go over many occupied arrays every time a collision occurs
+    * **Quadratic Probing** 
     * **Double Hashing:**
         * **First Hashing Function - Calculating Uncollided item:** Instead of trying with the next EMPTY index to the right, we try with the C-next EMPTY index. Each time we find a collision, we will vary our value C (we may jump 3 indexes for one collision, and jump only 1 index for other). This way we avoid clusters.
         * **Second Hashing Function - Selecting the right index:** We want c to have not common divisors with m, because that is the only way to go over the full array to assign a free index without repeating the same index. 
