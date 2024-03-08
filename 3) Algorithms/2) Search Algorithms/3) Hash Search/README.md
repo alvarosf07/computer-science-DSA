@@ -60,7 +60,7 @@ Hash search is most commonly used in scenarios where:
 
 # 2. Hash Functions
 
-> Hash Functions are the mechanism that enables hash search.
+> A Hash Function is the mechanism that enables hash search.
 > 
 > A Hash Function is a special function that takes the data to store as input, and outputs a random-looking number. That number is interpreted as the memory position the item will be stored at.
 
