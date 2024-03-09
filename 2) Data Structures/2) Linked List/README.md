@@ -67,7 +67,7 @@ Visualizing a linked list as a train of data compartments can help understand th
 
 <br/>
 
-## 1.1. Understanding
+## 2.1. Understanding
 
 * A Double-Linked List is a collection of elements stored in a chain of nodes that don't need to be at sequential memory addresses.
 * Each node can take as much memory as needed, and will contain three pieces of data: its value, and a pointer to the next node, and a pointer to the previous node.
