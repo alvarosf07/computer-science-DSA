@@ -17,7 +17,7 @@ The window starts at the beginning of the sequence and moves one element at a ti
 
 By keeping track of the current state of the window and updating it as we traverse the sequence, we can efficiently solve the problem in linear or near-linear time complexity.
 
-<img src="/Resources/Images/sliding_window.png" width="5200">
+<img src="/Resources/Images/sliding_window.png" width="550">
 
 <br/>
 
