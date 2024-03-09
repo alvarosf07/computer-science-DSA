@@ -12,9 +12,9 @@ Arrays are among the oldest and most important data structures; they offer a con
 
 ## Understanding
 
-Arrays can be visualized as a sequential arrangement of elements, where each element has a unique index. Imagine a row of boxes in which you can store items. Each box has its own number, indicating its position in the row. Here's an illustration to help visualize:
+Arrays can be visualized as a sequential arrangement of elements, where each element has a unique index. Imagine a row of boxes in which you can store items. Each box has its own number, indicating its position in the row.
 
-![Array Visualization](/Resources/Images/array_visualization.png)
+<img src="/Resources/Images/array_visualization.png" width="500">
 
 <br/>
 
