@@ -1,4 +1,4 @@
-# Data Structures III - Hash Map
+# Data Structure III - Hash Map
 
 > A Hash-Map is a collection of elements (pre)allocated in NON-contiguous spaces in the computer memory address. Each element in an array occupies the same amount of space in memory.
 > 
@@ -16,7 +16,7 @@ Hash maps present features of both arrays and linked lists:
 
 Visualize a hash map as a dictionary where each word (key) is associated with its definition (value). The hash function determines which "page" of the dictionary to look at based on the word's hash value.
 
-<img src="/Resources/Images/hash_map_visualization.png" width="550">
+<img src="/Resources/Images/hash_map_visualization.png" width="510">
 
 <br/>
 
