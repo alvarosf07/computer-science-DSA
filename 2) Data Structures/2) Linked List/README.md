@@ -12,7 +12,7 @@ A cell with an empty pointer marks the end of the chain.
 Imagine a chain of interconnected nodes, where each node holds a piece of data and a pointer to the next node. 
 Visualizing a linked list as a train of data compartments can help understand the concept:
 
-![Linked List Visualization](/Resources/Images/linkedlist_visualization.png)
+<img src="/Resources/Images/linkedlist_visualization.png" width="600">
 
 <br/>
 
