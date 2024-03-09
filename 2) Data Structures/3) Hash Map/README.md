@@ -14,7 +14,7 @@ Hash maps present features of both arrays and linked lists:
 
 ## Understanding
 
-Visualize a hash map as a dictionary where each word (key) is associated with its definition (value). The hash function determines which "page" of the dictionary to look at based on the word's hash value. Here's a simplified illustration:
+Visualize a hash map as a dictionary where each word (key) is associated with its definition (value). The hash function determines which "page" of the dictionary to look at based on the word's hash value.
 
 <img src="/Resources/Images/hash_map_visualization.png" width="600">
 
