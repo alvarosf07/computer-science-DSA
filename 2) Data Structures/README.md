@@ -4,8 +4,8 @@
      * <a href="https://github.com/alvarosf07/computer-science-DSA/tree/DSA-dev/2)%20Data%20Structures/1)%20Array">Array</a>
   * Linked List
      * <a href="https://github.com/alvarosf07/computer-science-DSA/tree/DSA-dev/2)%20Data%20Structures/2)%20Linked%20List">Linked List</a>
-     * <a href="">Double Linked List</a>
-     * <a href="">Circular Linked List</a>
+     * <a href="https://github.com/alvarosf07/computer-science-DSA/blob/DSA-dev/2)%20Data%20Structures/2)%20Linked%20List/README.md#2-double-linked-list">Double Linked List</a>
+     * <a href="https://github.com/alvarosf07/computer-science-DSA/blob/DSA-dev/2)%20Data%20Structures/2)%20Linked%20List/README.md#3-circular-linked-list">Circular Linked List</a>
   * Hash-Map
      * <a href="https://github.com/alvarosf07/computer-science-DSA/tree/DSA-dev/2)%20Data%20Structures/3)%20Hash%20Map">Hash Map/Table</a>
      * <a href="">Hash Set</a>
