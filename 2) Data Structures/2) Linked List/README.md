@@ -1,4 +1,4 @@
-# Data Structures II - Linked List
+# Data Structure II - Linked List
 
 <br/>
 
