@@ -16,7 +16,7 @@ Hash maps present features of both arrays and linked lists:
 
 Visualize a hash map as a dictionary where each word (key) is associated with its definition (value). The hash function determines which "page" of the dictionary to look at based on the word's hash value. Here's a simplified illustration:
 
-![Hash Map Visualization](hash_map_visualization.png)
+<img src="/Resources/Images/hash_map_visualization.png" width="600">
 
 <br/>
 
@@ -63,6 +63,8 @@ Visualize a hash map as a dictionary where each word (key) is associated with it
 > A Hash Function is a special function that takes the data to store as input, and outputs a random-looking number. That number is interpreted as the memory position the item will be stored at.
 
 Hash functions are explained in detail in the <a href="https://github.com/alvarosf07/computer-science-DSA/blob/master/3)%20Algorithms/2)%20Search%20Algorithms/3)%20Hash%20Search/README.md#2-hash-functions">Hash Functions</a> section.
+
+<img src="/Resources/Images/hash_function_visualization.png" width="600">
 
 <br/>
 <br/>
