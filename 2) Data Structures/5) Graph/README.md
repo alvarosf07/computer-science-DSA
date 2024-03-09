@@ -10,7 +10,7 @@
 
 Imagine a network of cities connected by roads, where each city is a node and each road is an edge. Visualizing a graph in this way can help understand the concept of vertices and edges:
 
-<img src="/Resources/Images/graph_visualization.png" width="350">
+<img src="/Resources/Images/graph_visualization.png" width="500">
 
 <br/>
 
