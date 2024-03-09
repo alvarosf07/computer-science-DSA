@@ -1,4 +1,4 @@
-# Graphs
+# Data Structure V - Graph
 
 > A graph is a data structure that consists of a set of vertices (nodes) connected by edges, where each edge represents a relationship between two vertices.
 > 
