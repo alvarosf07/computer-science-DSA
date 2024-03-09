@@ -12,7 +12,7 @@ The two pointers technique works by manipulating the positions of two pointers w
 
 <br/>
 
-<img src="/Resources/Images/Two_Pointers.png" width="400">
+<img src="/Resources/Images/two_pointers.png" width="360">
 
 <br/>
 

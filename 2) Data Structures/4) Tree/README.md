@@ -1,4 +1,4 @@
-# 1. Tree
+# Data Structure IV - Tree
 > A tree is a hierarchical data structure consisting of nodes connected by edges. Each node has a parent node and zero or more child nodes, forming a tree-like structure.
 >
 > Trees are widely used to represent hierarchical relationships and organize data efficiently.
@@ -25,7 +25,7 @@ A tree is similar to a linked-list, with 2 main differences:
 
 Imagine a family tree, where each person is a node and relationships between family members are represented by edges. Visualizing a tree in this way can help understand the hierarchical structure:
 
-![Tree Visualization](tree_visualization.png)
+<img src="/Resources/Images/tree_visualization.png" width="600">
 
 <br/>
 
@@ -91,11 +91,13 @@ Tree that is not a binary tree (at least one node has more than 2 children).
 ## 2.3. (Binary) Search Tree (BST)
 > Is a special type of binary tree which is horizontally sorted: all children to the left are lower than the parent, and all children to the right are higher than the parent.
 
+<br/>
+
+<img src="/Resources/Images/BST_visualization.png" width="500">
+
 BSTs present 2 main advantages:
   * **Efficient Element Search/Access** - Element Access in `O(H)`, where H is the height of the tree. H is on average `Log2 N`.
   * **Efficient Element Insertion/Deletion** - Element Insertion/Deletion in `O(H)`, where H is the height of the tree. H is on average `Log2 N`.
-
-![Tree Visualization](/Resources/Images/BST_visualization.png)
   
   <br/>
 
@@ -108,7 +110,7 @@ BSTs present 2 main advantages:
 
   In this situation, the best solution is to rearrange the nodes in a tree, such that its height is reduced (and most nodes have 2 children). This is called "tree balancing".
 
-  ![Tree Visualization](/Resources/Images/BST_unbalanced_visualization.png)
+  <img src="/Resources/Images/BST_unbalanced_visualization.png" width="550">
   
   <br/>
 
@@ -199,7 +201,7 @@ However, accessing or inserting/deleting other nodes still costs `O(log n)`.
   * Data is added by swapping nodes for parents until heap properties are satisfied.
   * Data is removed with queues (always shift target with last element in the queue, and then bubble up or down to satisfy heap rules).
 
-![Tree Visualization](/Resources/Images/Heap_visualization.png)
+<img src="/Resources/Images/heap_visualization.png" width="430">
 
 <br/>
 
@@ -208,7 +210,7 @@ There are two main types of heaps:
 * **Max Heap** -  It has the highest element at the root of the tree.
 * **Min Heap** -  It has the lowest element at the root of the tree.
 
-![Tree Visualization](/Resources/Images/Heapmin_visualization.png)
+<img src="/Resources/Images/heapmin_visualization.png" width="380">
 
 <br/>
 

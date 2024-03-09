@@ -1,4 +1,4 @@
-# Data Structures III - Hash Map
+# Data Structure III - Hash Map
 
 > A Hash-Map is a collection of elements (pre)allocated in NON-contiguous spaces in the computer memory address. Each element in an array occupies the same amount of space in memory.
 > 
@@ -12,15 +12,15 @@ Hash maps present features of both arrays and linked lists:
 
 <br/>
 
-## Understanding
+## 1.1. Understanding
 
-Visualize a hash map as a dictionary where each word (key) is associated with its definition (value). The hash function determines which "page" of the dictionary to look at based on the word's hash value. Here's a simplified illustration:
+Visualize a hash map as a dictionary where each word (key) is associated with its definition (value). The hash function determines which "page" of the dictionary to look at based on the word's hash value.
 
-![Hash Map Visualization](hash_map_visualization.png)
+<img src="/Resources/Images/hash_map_visualization.png" width="510">
 
 <br/>
 
-## Characteristics
+## 1.2. Characteristics
 
 | Characteristic                | Specs           | Description                                                |
 |-------------------------------|-----------------|------------------------------------------------------------|
@@ -36,7 +36,7 @@ Visualize a hash map as a dictionary where each word (key) is associated with it
 
 <br/>
 
-## Hash Map Advantages & Disadvantages
+## 1.3. Hash Map Advantages & Disadvantages
 
 #### Advantages:
 - **Fast Lookup**: Provides constant-time lookup for accessing elements.
@@ -64,29 +64,33 @@ Visualize a hash map as a dictionary where each word (key) is associated with it
 
 Hash functions are explained in detail in the <a href="https://github.com/alvarosf07/computer-science-DSA/blob/master/3)%20Algorithms/2)%20Search%20Algorithms/3)%20Hash%20Search/README.md#2-hash-functions">Hash Functions</a> section.
 
+In the image below it's possible to observe how a hash function works in practice. In this example, the hash function maps names to integers from 0 to 15; but there's a collision between two names at memory address number 02.
+
+<img src="/Resources/Images/hash_function_visualization.png" width="400">
+
 <br/>
 <br/>
 
 # 3. Types of Hash Maps by Hashing Methodology
 Based on the type of hash function, it's possible to find different types of hash maps:
 
-### Chaining Hash Map
+### 3.1. Chaining Hash Map
 Chaining Hash Maps use chaining as collision resolution mechanism to handle situations where multiple keys hash to the same index. In Chaining Hash Maps, collisions are handled by maintaining a linked list at each bucket. When a collision occurs, the key-value pair is added to the linked list at that bucket.
 
-### Open Addressing Hash Maps
+### 3.2. Open Addressing Hash Maps
 Open addressing is a method used in hash tables to resolve collisions that occur when two different keys hash to the same index. In open addressing, when a collision happens, instead of storing the colliding item in the same slot (index) in the hash table, the algorithm looks for the next available slot (probe sequence) in the table until an empty slot is found. There are several techniques for probe sequences, including linear probing, quadratic probing, and double hashing.
 
  * **Linear Probing Hash Map** -  The algorithm checks consecutive slots in the table until an empty slot is found.
  * **Quadratic Probing Hash Map** - The algorithm checks slots using a quadratic function until an empty slot is found.
  * **Double Hashing Hash Map** - The algorithm uses a second hash function to determine the step size for probing.
 
-### Robin Hood Hash Map
+### 3.3. Robin Hood Hash Map
 In this variant, keys are stored in a linear array, and when a collision occurs, the key with the longest probe sequence is moved closer to its original hashed position.
 
-### Cuckoo Hood Hash Map
+### 3.4. Cuckoo Hood Hash Map
 This hash map uses multiple hash functions and two or more hash tables. If a collision occurs in one table, the element is moved to its alternative table until a vacant spot is found.
 
-###  Perfect Hash Map
+### 3.5. Perfect Hash Map
 These hash maps are designed to have minimal or no collisions for a specific set of keys. They are often used when the set of keys is known in advance.
 
 
