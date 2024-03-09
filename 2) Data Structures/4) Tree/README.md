@@ -201,7 +201,7 @@ However, accessing or inserting/deleting other nodes still costs `O(log n)`.
   * Data is added by swapping nodes for parents until heap properties are satisfied.
   * Data is removed with queues (always shift target with last element in the queue, and then bubble up or down to satisfy heap rules).
 
-<img src="/Resources/Images/heap_visualization.png" width="380">
+<img src="/Resources/Images/heap_visualization.png" width="430">
 
 <br/>
 
