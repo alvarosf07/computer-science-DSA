@@ -100,6 +100,115 @@ def delete_element(self, index):
     return False
 ```
 <br/>
+
+<details>
+  <summary>Double-Linked List Implementations & Main Operations</summary>
+  
+  ```python
+  class Node:
+    def __init__(self, data):
+        self.data = data
+        self.prev = None
+        self.next = None
+
+class DoublyLinkedList:
+    def __init__(self):
+        self.head = None
+        self.tail = None
+
+    # Function to append a new node to the end of the list
+    def append(self, data):
+        new_node = Node(data)
+        if self.head is None:
+            self.head = new_node
+        else:
+            self.tail.next = new_node
+            new_node.prev = self.tail
+        self.tail = new_node
+
+    # Function to access an element at a specific index
+    def get(self, index):
+        current = self.head
+        count = 0
+        while current is not None:
+            if count == index:
+                return current.data
+            current = current.next
+            count += 1
+        raise IndexError("Index out of range")
+
+    # Function to modify the data of a node at a specific index
+    def modify(self, index, data):
+        current = self.head
+        count = 0
+        while current is not None:
+            if count == index:
+                current.data = data
+                return
+            current = current.next
+            count += 1
+        raise IndexError("Index out of range")
+
+    # Function to insert a new node at a specific index
+    def insert(self, index, data):
+        new_node = Node(data)
+        if index == 0:
+            new_node.next = self.head
+            if self.head is not None:
+                self.head.prev = new_node
+            self.head = new_node
+            if self.tail is None:
+                self.tail = new_node
+            return
+        current = self.head
+        count = 0
+        while current is not None:
+            if count == index - 1:
+                new_node.prev = current
+                new_node.next = current.next
+                if current.next is not None:
+                    current.next.prev = new_node
+                else:
+                    self.tail = new_node
+                current.next = new_node
+                return
+            current = current.next
+            count += 1
+        raise IndexError("Index out of range")
+
+    # Function to delete a node at a specific index
+    def delete(self, index):
+        if index == 0:
+            if self.head is None:
+                raise IndexError("Index out of range")
+            if self.head == self.tail:
+                self.head = None
+                self.tail = None
+            else:
+                self.head = self.head.next
+                self.head.prev = None
+            return
+        current = self.head
+        count = 0
+        while current is not None:
+            if count == index:
+                if current == self.tail:
+                    self.tail = current.prev
+                else:
+                    current.prev.next = current.next
+                    if current.next is not None:
+                        current.next.prev = current.prev
+                return
+            current = current.next
+            count += 1
+        raise IndexError("Index out of range")
+
+
+  ```
+
+</details>
+
+<br/>
 <br/>
 
 # 2. Linked List Implementation & Main Operations - C++
