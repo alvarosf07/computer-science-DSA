@@ -1,4 +1,4 @@
-# Problem #2 - Find Max Number in List
+# Problem #02 - Find Max Number in List
 
 ## Python
 
