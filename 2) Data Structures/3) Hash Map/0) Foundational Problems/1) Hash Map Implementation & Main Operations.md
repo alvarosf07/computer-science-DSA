@@ -66,4 +66,19 @@ def remove(self, key):
                 del self.buckets[index][i]
                 return
 ```
+
 <br/>
+<br/>
+
+# 2. Hash Map Implementation & Main Operations - C++
+```cpp
+
+```
+
+<br/>
+<br/>
+
+# 3. Hash Map Implementation & Main Operations - JAVA
+```java
+
+```
