@@ -1,4 +1,4 @@
-# Problem #1 - Different Ways to Sum All Numbers of Array
+# Problem #01 - Different Ways to Sum All Numbers of Array
 
 ## Python
 
