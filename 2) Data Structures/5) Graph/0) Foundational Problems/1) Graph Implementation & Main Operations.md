@@ -90,6 +90,67 @@ def remove_edge(self, src, dest):
 
 # 2. Graph Implementation & Main Operations - C++
 ```cpp
+#include <iostream>
+#include <vector>
+#include <unordered_map>
+#include <unordered_set>
+#include <stdexcept>
+
+using namespace std;
+
+// Graph class manages the operations related to the graph
+class Graph {
+private:
+    unordered_map<int, unordered_set<int>> adjList; // Adjacency list to represent the graph
+
+public:
+    // Function to add a vertex to the graph
+    void addVertex(int vertex) {
+        if (adjList.find(vertex) == adjList.end()) {
+            adjList[vertex] = unordered_set<int>();
+        }
+    }
+
+    // Function to add an edge between two vertices in the graph
+    void addEdge(int from, int to) {
+        addVertex(from);
+        addVertex(to);
+        adjList[from].insert(to);
+    }
+
+    // Function to remove an edge between two vertices in the graph
+    void removeEdge(int from, int to) {
+        if (adjList.find(from) != adjList.end()) {
+            adjList[from].erase(to);
+        }
+    }
+
+    // Function to check if an edge exists between two vertices in the graph
+    bool hasEdge(int from, int to) const {
+        if (adjList.find(from) != adjList.end()) {
+            return adjList.at(from).find(to) != adjList.at(from).end();
+        }
+        return false;
+    }
+
+    // Function to remove a vertex and its incident edges from the graph
+    void removeVertex(int vertex) {
+        if (adjList.find(vertex) != adjList.end()) {
+            for (auto& [from, neighbors] : adjList) {
+                neighbors.erase(vertex);
+            }
+            adjList.erase(vertex);
+        }
+    }
+
+    // Function to get the neighbors of a vertex in the graph
+    const unordered_set<int>& getNeighbors(int vertex) const {
+        if (adjList.find(vertex) != adjList.end()) {
+            return adjList.at(vertex);
+        }
+        throw out_of_range("Vertex not found");
+    }
+};
 
 ```
 
@@ -98,6 +159,55 @@ def remove_edge(self, src, dest):
 
 # 3. Graph Implementation & Main Operations - JAVA
 ```java
+import java.util.*;
+
+// Graph class manages the operations related to the graph
+class Graph {
+    private Map<Integer, Set<Integer>> adjList; // Adjacency list to represent the graph
+
+    // Constructor to initialize an empty graph
+    Graph() {
+        adjList = new HashMap<>();
+    }
+
+    // Function to add a vertex to the graph
+    void addVertex(int vertex) {
+        adjList.putIfAbsent(vertex, new HashSet<>());
+    }
+
+    // Function to add an edge between two vertices in the graph
+    void addEdge(int from, int to) {
+        addVertex(from);
+        addVertex(to);
+        adjList.get(from).add(to);
+    }
+
+    // Function to remove an edge between two vertices in the graph
+    void removeEdge(int from, int to) {
+        if (adjList.containsKey(from)) {
+            adjList.get(from).remove(to);
+        }
+    }
+
+    // Function to check if an edge exists between two vertices in the graph
+    boolean hasEdge(int from, int to) {
+        return adjList.containsKey(from) && adjList.get(from).contains(to);
+    }
+
+    // Function to remove a vertex and its incident edges from the graph
+    void removeVertex(int vertex) {
+        adjList.values().forEach(neighbors -> neighbors.remove(vertex));
+        adjList.remove(vertex);
+    }
+
+    // Function to get the neighbors of a vertex in the graph
+    Set<Integer> getNeighbors(int vertex) {
+        if (!adjList.containsKey(vertex)) {
+            throw new IllegalArgumentException("Vertex not found");
+        }
+        return adjList.get(vertex);
+    }
+}
 
 ```
 
