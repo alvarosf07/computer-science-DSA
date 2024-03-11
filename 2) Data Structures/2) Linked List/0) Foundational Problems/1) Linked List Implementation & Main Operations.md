@@ -100,3 +100,239 @@ def delete_element(self, index):
     return False
 ```
 <br/>
+<br/>
+
+# 2. Linked List Implementation & Main Operations - C++
+
+```c++
+#include <iostream>
+#include <stdexcept>
+
+using namespace std;
+
+// Node class represents each element (node) in the linked list
+class Node {
+public:
+    int data;   // Data stored in the node
+    Node* next; // Pointer to the next node
+
+    // Constructor to initialize node with data and nullptr for next pointer
+    Node(int val) : data(val), next(nullptr) {}
+};
+
+// LinkedList class manages the operations related to the linked list
+class LinkedList {
+private:
+    Node* head; // Pointer to the head of the linked list
+
+public:
+    // Constructor to initialize an empty linked list with nullptr head
+    LinkedList() : head(nullptr) {}
+
+    // Function to access an element at a specific index
+    int get(int index) {
+        if (index < 0 || index >= size()) {
+            throw out_of_range("Index out of range");
+        }
+        Node* curr = head;
+        for (int i = 0; i < index; ++i) {
+            curr = curr->next;
+        }
+        return curr->data;
+    }
+
+    // Function to modify an element at a specific index
+    void set(int index, int val) {
+        if (index < 0 || index >= size()) {
+            throw out_of_range("Index out of range");
+        }
+        Node* curr = head;
+        for (int i = 0; i < index; ++i) {
+            curr = curr->next;
+        }
+        curr->data = val;
+    }
+
+    // Function to insert an element at a specific index
+    void insert(int index, int val) {
+        if (index < 0 || index > size()) {
+            throw out_of_range("Index out of range");
+        }
+        if (index == 0) {
+            push_front(val);
+            return;
+        }
+        Node* curr = head;
+        for (int i = 0; i < index - 1; ++i) {
+            curr = curr->next;
+        }
+        Node* newNode = new Node(val);
+        newNode->next = curr->next;
+        curr->next = newNode;
+    }
+
+    // Function to delete an element at a specific index
+    void remove(int index) {
+        if (index < 0 || index >= size()) {
+            throw out_of_range("Index out of range");
+        }
+        if (index == 0) {
+            pop_front();
+            return;
+        }
+        Node* curr = head;
+        for (int i = 0; i < index - 1; ++i) {
+            curr = curr->next;
+        }
+        Node* temp = curr->next;
+        curr->next = temp->next;
+        delete temp;
+    }
+
+    // Function to push a new element to the front of the linked list
+    void push_front(int val) {
+        Node* newNode = new Node(val);
+        newNode->next = head;
+        head = newNode;
+    }
+
+    // Function to pop the first element from the linked list
+    void pop_front() {
+        if (head == nullptr) {
+            throw out_of_range("List is empty");
+        }
+        Node* temp = head;
+        head = head->next;
+        delete temp;
+    }
+
+    // Function to return the size of the linked list
+    int size() {
+        int count = 0;
+        Node* curr = head;
+        while (curr != nullptr) {
+            ++count;
+            curr = curr->next;
+        }
+        return count;
+    }
+};
+
+```
+
+<br/>
+<br/>
+
+# 2. Linked List Implementation & Main Operations - JAVA
+
+```java
+import java.util.NoSuchElementException;
+
+// Node class represents each element (node) in the linked list
+class Node {
+    int data;   // Data stored in the node
+    Node next;  // Reference to the next node
+
+    // Constructor to initialize node with data and null for next reference
+    Node(int data) {
+        this.data = data;
+        this.next = null;
+    }
+}
+
+// LinkedList class manages the operations related to the linked list
+class LinkedList {
+    private Node head; // Reference to the head of the linked list
+
+    // Constructor to initialize an empty linked list with null head
+    LinkedList() {
+        this.head = null;
+    }
+
+    // Function to access an element at a specific index
+    int get(int index) {
+        if (index < 0 || index >= size()) {
+            throw new IndexOutOfBoundsException("Index out of range");
+        }
+        Node curr = head;
+        for (int i = 0; i < index; ++i) {
+            curr = curr.next;
+        }
+        return curr.data;
+    }
+
+    // Function to modify an element at a specific index
+    void set(int index, int val) {
+        if (index < 0 || index >= size()) {
+            throw new IndexOutOfBoundsException("Index out of range");
+        }
+        Node curr = head;
+        for (int i = 0; i < index; ++i) {
+            curr = curr.next;
+        }
+        curr.data = val;
+    }
+
+    // Function to insert an element at a specific index
+    void insert(int index, int val) {
+        if (index < 0 || index > size()) {
+            throw new IndexOutOfBoundsException("Index out of range");
+        }
+        if (index == 0) {
+            pushFront(val);
+            return;
+        }
+        Node newNode = new Node(val);
+        Node prev = head;
+        for (int i = 0; i < index - 1; ++i) {
+            prev = prev.next;
+        }
+        newNode.next = prev.next;
+        prev.next = newNode;
+    }
+
+    // Function to delete an element at a specific index
+    void remove(int index) {
+        if (index < 0 || index >= size()) {
+            throw new IndexOutOfBoundsException("Index out of range");
+        }
+        if (index == 0) {
+            popFront();
+            return;
+        }
+        Node prev = head;
+        for (int i = 0; i < index - 1; ++i) {
+            prev = prev.next;
+        }
+        Node temp = prev.next;
+        prev.next = temp.next;
+        temp.next = null; // Remove reference to prevent memory leak
+    }
+
+    // Function to push a new element to the front of the linked list
+    void pushFront(int val) {
+        Node newNode = new Node(val);
+        newNode.next = head;
+        head = newNode;
+    }
+
+    // Function to pop the first element from the linked list
+    void popFront() {
+        if (head == null) {
+            throw new NoSuchElementException("List is empty");
+        }
+        head = head.next;
+    }
+
+    // Function to return the size of the linked list
+    int size() {
+        int count = 0;
+        Node curr = head;
+        while (curr != null) {
+            ++count;
+            curr = curr.next;
+        }
+        return count;
+    }
+}
+```
