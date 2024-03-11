@@ -1,11 +1,11 @@
 # Implementations with Linked Lists
 Several Abstract Data Types (ADTs) and Data Structures (DS) are commonly implemented using linked lists:
 
-### Abstract Data Types (ADTs) Implemented with Arrays:
+### Abstract Data Types (ADTs) Implemented with Linked Lists:
   * **Stacks -** A stack is a linear data structure that follows the Last In, First Out (LIFO) principle. It supports two main operations: push (to add an element to the top) and pop (to remove the top element).
   * **Queues -** A queue is a linear data structure that follows the First In, First Out (FIFO) principle. It supports two main operations: enqueue (to add an element to the rear) and dequeue (to remove the front element).
 
-### Data Structures (DS) Implemented with Arrays:
+### Data Structures (DS) Implemented with Linked Lists:
   * **Graphs -** Graphs can be implemented using linked lists to represent the adjacency list representation. In this representation, each vertex of the graph is represented as a node in the linked list, and the edges are represented as links between nodes.
 
 <br/>
