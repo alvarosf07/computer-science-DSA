@@ -7,7 +7,7 @@ Several Abstract Data Types (ADTs) and Data Structures (DS) are commonly impleme
 
 ### Other Structures implemented with Hash Maps:
   * **Binary Search Algorithms -** A counter is a data structure that keeps track of the frequency of elements in a collection. Hash maps can be used to implement counters by associating each unique element with its count (frequency) in the hash map. This allows for efficient counting of occurrences and manipulation of element frequencies.
-  * **Caches -** Caches are used to store frequently accessed or recently used data items to reduce access latency. Hash maps can be used to implement caches by storing key-value pairs, where the keys represent the data items and the values represent their corresponding cached values. This allows for fast retrieval and update of cached data.
+  * ** -** .
 
 <br/>
 
