@@ -84,5 +84,20 @@ def remove_edge(self, src, dest):
         self.adj_list[src].remove(dest)
         self.adj_list[dest].remove(src)
 ```
+
 <br/>
+<br/>
+
+# 2. Graph Implementation & Main Operations - C++
+```cpp
+
+```
+
+<br/>
+<br/>
+
+# 3. Graph Implementation & Main Operations - JAVA
+```java
+
+```
 
