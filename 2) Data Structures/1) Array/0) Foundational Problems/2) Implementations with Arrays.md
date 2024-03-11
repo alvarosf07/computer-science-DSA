@@ -1,12 +1,12 @@
 # Implementations with Arrays
-Several Abstract Data Structures (ADS) and Data Structures (DSA) are commonly implemented using arrays:
+Several Abstract Data Types (ADTs) and Data Structures (DSA) are commonly implemented using arrays:
 
-### Abstract Data Structures Implemented with Arrays:
+### Abstract Data Types (ADTs) Implemented with Arrays:
   * **Lists -** Lists, such as dynamic arrays (ArrayList in Java, vector in C++), are often implemented using arrays. These resizable arrays allow for efficient element access and modification.
   * **Stacks -** Stacks are implemented using arrays to store elements in a Last-In-First-Out (LIFO) manner. The top of the stack is typically represented by the last element of the array.
   * **Queues -** Queues can be implemented using arrays as well. While simple arrays may not be efficient for implementing queues due to the need for shifting elements, circular arrays or dynamic arrays can be used to implement efficient queues.
 
-### Data Structures Implemented with Arrays:
+### Data Structures (DS) Implemented with Arrays:
   * **Hash Tables -** While hash tables themselves are not directly implemented using arrays, arrays are often used as underlying data structures for implementing hash tables. Arrays are used to store buckets of key-value pairs, and collision resolution techniques such as chaining (using linked lists) or open addressing can be employed.
   * **Heaps -** Binary heaps, a type of tree-based data structure, can be implemented using arrays. In a binary heap, the parent-child relationships are defined based on the indices of elements in the array.
 
