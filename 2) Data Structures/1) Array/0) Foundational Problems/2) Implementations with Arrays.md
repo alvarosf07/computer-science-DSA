@@ -1,5 +1,5 @@
 # Implementations with Arrays
-Several abstract data structures (ADS) in data structure and algorithms (DSA) are commonly implemented using arrays:
+Several Abstract Data Structures (ADS) and Data Structures (DSA) are commonly implemented using arrays:
 
 ### Abstract Data Structures Implemented with Arrays:
   * **Lists -** Lists, such as dynamic arrays (ArrayList in Java, vector in C++), are often implemented using arrays. These resizable arrays allow for efficient element access and modification.
