@@ -16,9 +16,3 @@
 | Load Factor Management      | Monitoring and managing the load factor to ensure optimal performance.                                  |
 | Hash Function Optimization  | Optimizing the hash function to distribute keys evenly across the hash map and reduce collisions.       |
 
-
-
-
-
- 
-
