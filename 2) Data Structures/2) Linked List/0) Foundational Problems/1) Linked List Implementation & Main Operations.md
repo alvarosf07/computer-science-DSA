@@ -332,7 +332,7 @@ public:
 <br/>
 <br/>
 
-# 2. Linked List Implementation & Main Operations - JAVA
+# 3. Linked List Implementation & Main Operations - JAVA
 
 ```java
 import java.util.NoSuchElementException;
