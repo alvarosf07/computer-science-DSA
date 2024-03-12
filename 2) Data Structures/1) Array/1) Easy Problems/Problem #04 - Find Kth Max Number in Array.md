@@ -1,5 +1,5 @@
 
-# [Problem #04 - Find k Max Number in Array](https://www.geeksforgeeks.org/k-largestor-smallest-elements-in-an-array/)
+# [Problem #04 - Find Kth Max Number in Array](https://www.geeksforgeeks.org/k-largestor-smallest-elements-in-an-array/)
 
 ## Solution 1 - Sort list and select kth position
   * Time complexity: `O(N * log(N))`
