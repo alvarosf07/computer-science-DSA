@@ -50,12 +50,15 @@ It can be shown that the maximum profit you can make is 0.
 	<li><code>0 &lt;= budget &lt;= 1000</code></li>
 </ul>
 
+<br/>
+
 ## Solutions
 
 ### Solution 1
 
 <!-- tabs:start -->
 
+#### Python:
 ```python
 class Solution:
     def maximumProfit(self, present: List[int], future: List[int], budget: int) -> int:
@@ -68,6 +71,7 @@ class Solution:
         return f[-1][-1]
 ```
 
+#### JAVA:
 ```java
 class Solution {
     public int maximumProfit(int[] present, int[] future, int budget) {
@@ -87,6 +91,7 @@ class Solution {
 }
 ```
 
+#### C++:
 ```cpp
 class Solution {
 public:
@@ -108,6 +113,8 @@ public:
 ```
 
 <!-- tabs:end -->
+
+<br/>
 
 ### Solution 2
 
