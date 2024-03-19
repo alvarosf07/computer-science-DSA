@@ -4,35 +4,42 @@
 
 ## Description
 
-Given the `head` of a singly linked list, rotate the list to the right by `k` places.
+You are given the heads of two sorted linked lists `list1` and `list2`.
 
-If there are two middle nodes, return the second middle node.
+Merge the two lists into one sorted list. The list should be made by splicing together the nodes of the first two lists.
+
+Return the head of the merged linked list.
 
 
 #### Example 1:
 
-<img alt="" src="https://assets.leetcode.com/uploads/2020/11/13/rotate1.jpg" style="width: 370px;" />
+<img alt="" src="https://assets.leetcode.com/uploads/2020/10/03/merge_ex1.jpg" style="width: 370px;" />
 
 ```
-Input: head = [1,2,3,4,5], k = 2
-Output: [4,5,1,2,3]
+Input: list1 = [1,2,4], list2 = [1,3,4]
+Output: [1,1,2,3,4,4]
 ```
 
 #### Example 2:
 
-<img alt="" src="https://assets.leetcode.com/uploads/2020/11/13/roate2.jpg" style="width: 450px;" />
+```
+Input: list1 = [], list2 = []
+Output: []
+```
+
+#### Example 3:
 
 ```
-Input: head = [0,1,2], k = 4
-Output: [2,0,1]
+Input: list1 = [], list2 = [0]
+Output: [0]
 ```
 
 <br/>
 
 #### Constraints:
-  * The number of nodes in the list is the range <code>[0, 500]</code>.
-  * <code>-100 <= Node.val <= 100 </code>
-  * <code>0 <= k <= 2 * 109 </code>
+  * The number of nodes in the list is the range `[0, 50]`.
+  * `-100 <= Node.val <= 100`
+  * Both `list1`and `list2` are sorted in non-decreasing order.
 
 <br/>
 
@@ -40,96 +47,32 @@ Output: [2,0,1]
 <br/>
 
 ## Solution 1
-Two-pointer approach: 
-  * Go to the (length - K)th node
-  * Then disconnect right part and connect it to the front head.
-  * Return the new head (ie. node where we disconnected) 
+ 1. We create a dummy node to which we attach nodes from lists.
+ 2. We iterate over lists using two-pointers and build up a resulting list so that values are monotonically increased.
 
 #### Complexity:
-  * Time: O(N)
-  * Space: O(1)
+  * Time: `O(n)`
+  * Space: `O(1)`
 
-#### ➤ Python:
+#### ➤ [Python](https://leetcode.com/problems/merge-two-sorted-lists/solutions/1826693/python3-merging-explained):
 ```python
 class Solution:
-    def rotateRight(self, head: Optional[ListNode], k: int) -> Optional[ListNode]:
-        if not head or not head.next or not k: return head
-        cur = head
-        count = 0
-        while cur:
-            count += 1
-            cur = cur.next
-        
-        k = k % count
-        
-        fast = head
-        slow = head
-        while fast:
-            if k >= 0:
-                fast = fast.next
-                k -= 1
+    def mergeTwoLists(self, list1: Optional[ListNode], list2: Optional[ListNode]) -> Optional[ListNode]:
+        cur = dummy = ListNode()
+        while list1 and list2:               
+            if list1.val < list2.val:
+                cur.next = list1
+                list1, cur = list1.next, list1
             else:
-                fast = fast.next
-                slow = slow.next
-        
-        end = slow.next
-        slow.next = None
-        cur = end
-        while cur and cur.next:
-            cur = cur.next
-        if not end: return head
-        cur.next = head
-        return end
+                cur.next = list2
+                list2, cur = list2.next, list2
+                
+        if list1 or list2:
+            cur.next = list1 if list1 else list2
+            
+        return dummy.next
 ```
 
 <br/>
 
-## Solution 2
-``` python
-# Definition for singly-linked list.
-# class ListNode:
-#     def __init__(self, x):
-#         self.val = x
-#         self.next = None
-
-class Solution:
-    def rotateRight(self, head: ListNode, k: int) -> ListNode:
-        
-        if not head:
-            return None
-        
-        lastElement = head
-        length = 1
-        # get the length of the list and the last node in the list
-        while ( lastElement.next ):
-            lastElement = lastElement.next
-            length += 1
-
-        # If k is equal to the length of the list then k == 0
-        # ElIf k is greater than the length of the list then k = k % length
-        k = k % length
-            
-        # Set the last node to point to head node
-        # The list is now a circular linked list with last node pointing to first node
-        lastElement.next = head
-        
-        # Traverse the list to get to the node just before the ( length - k )th node.
-        # Example: In 1->2->3->4->5, and k = 2
-        #          we need to get to the Node(3)
-        tempNode = head
-        for _ in range( length - k - 1 ):
-            tempNode = tempNode.next
-        
-        # Get the next node from the tempNode and then set the tempNode.next as None
-        # Example: In 1->2->3->4->5, and k = 2
-        #          tempNode = Node(3)
-        #          answer = Node(3).next => Node(4)
-        #          Node(3).next = None ( cut the linked list from here )
-        answer = tempNode.next
-        tempNode.next = None
-        
-        return answer
-
-```
-[Source](https://leetcode.com/problems/rotate-list/solutions/348197/96-faster-simple-python-solution-with-explanation)
 <!-- end -->
