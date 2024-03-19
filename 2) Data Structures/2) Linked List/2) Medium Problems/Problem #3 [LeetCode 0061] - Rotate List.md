@@ -131,4 +131,5 @@ class Solution:
         return answer
 
 ```
+[Source](https://leetcode.com/problems/rotate-list/solutions/348197/96-faster-simple-python-solution-with-explanation)
 <!-- end -->
