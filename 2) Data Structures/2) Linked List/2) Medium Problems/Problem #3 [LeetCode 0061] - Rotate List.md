@@ -46,8 +46,8 @@ Two-pointer approach:
   * Return the new head (ie. node where we disconnected) 
 
 #### Complexity:
-  * Time: O(N)
-  * Space: O(1)
+  * Time: `O(n)`
+  * Space: `O(1)`
 
 #### ➤ Python:
 ```python
