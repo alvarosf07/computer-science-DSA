@@ -20,7 +20,7 @@ Output: [4,5,1,2,3]
 
 #### Example 2:
 
-<img alt="" src="https://assets.leetcode.com/uploads/2020/11/13/roate2.jpg" style="width: 450px;" />
+<img alt="" src="https://assets.leetcode.com/uploads/2020/11/13/roate2.jpg" style="width: 250px;" />
 
 ```
 Input: head = [0,1,2], k = 4
@@ -30,9 +30,9 @@ Output: [2,0,1]
 <br/>
 
 #### Constraints:
-  * The number of nodes in the list is the range <code>[0, 500]</code>.
-  * <code>-100 <= Node.val <= 100 </code>
-  * <code>0 <= k <= 2 * 109 </code>
+  * The number of nodes in the list is the range `[0, 500]`.
+  * `-100 <= Node.val <= 100`
+  * `0 <= k <= 2 * 109`
 
 <br/>
 
