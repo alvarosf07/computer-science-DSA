@@ -32,7 +32,7 @@ Output: true
 Explanation: There is a cycle in the linked list, where the tail connects to the 0th node.
 ```
 
-#### Example 2:
+#### Example 3:
 
 <img alt="" src="https://assets.leetcode.com/uploads/2018/12/07/circularlinkedlist_test3.png" style="width: 50px;" />
 
