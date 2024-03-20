@@ -49,7 +49,7 @@ Two-pointer approach:
   * Time: `O(n)`
   * Space: `O(1)`
 
-#### ➤ Python:
+#### ➤ [Python]():
 ```python
 class Solution:
     def rotateRight(self, head: Optional[ListNode], k: int) -> Optional[ListNode]:
