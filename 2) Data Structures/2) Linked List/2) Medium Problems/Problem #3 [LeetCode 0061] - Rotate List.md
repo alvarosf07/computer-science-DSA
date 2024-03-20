@@ -85,6 +85,8 @@ class Solution:
 <br/>
 
 ## Solution 2
+#### ➤ [Python](https://leetcode.com/problems/rotate-list/solutions/348197/96-faster-simple-python-solution-with-explanation)
+
 ``` python
 # Definition for singly-linked list.
 # class ListNode:
@@ -131,5 +133,4 @@ class Solution:
         return answer
 
 ```
-[Source](https://leetcode.com/problems/rotate-list/solutions/348197/96-faster-simple-python-solution-with-explanation)
 <!-- end -->
