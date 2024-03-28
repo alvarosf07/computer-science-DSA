@@ -189,7 +189,26 @@ BSTs present 2 main advantages:
       * **Rebalancing**: After a split operation, the parent node may also exceed its maximum capacity. In this case, the process is repeated recursively up the tree until a node is reached that does not exceed its maximum capacity.
       * **Merge Operation (Optional)**: During deletion, if a node falls below a minimum occupancy threshold, it may be merged with a neighboring node. This operation ensures that the B-tree remains balanced and efficient.
     * **Uses** - B-Trees are commonly used in database systems.
-    
+
+
+  <br/>
+
+  ### 2.3.5. BSTs vs Hash Maps ([see source](https://www.geeksforgeeks.org/advantages-of-bst-over-hash-table/))
+  Hash Table supports following operations in ?(1) time: 1) Search 2) Insert 3) Delete The time complexity of above operations in a self-balancing Binary Search Tree (BST) (like Red-Black Tree, AVL Tree, Splay Tree, etc) is O(Logn).  So Hash Table seems to beating BST in all common operations. When should we prefer BST over Hash Tables then? What are the advantages of BSTs vs Hash Maps?
+  1. We can get all keys in sorted order by just doing Inorder Traversal of BST. This is not a natural operation in Hash Tables and requires extra efforts.
+  2. Doing order statistics, finding closest lower and greater elements, doing range queries are easy to do with BSTs. Like sorting, these operations are not a natural operation with Hash Tables.
+  3. BSTs are easy to implement compared to hashing, we can easily implement our own customized BST. To implement Hashing, we generally rely on libraries provided by programming languages.
+  4. With Self-Balancing BSTs, all operations are guaranteed to work in O(Logn) time. But with Hashing, ?(1) is average time and some particular operations may be costly i.e, O(n2 ), especially when table resizing happens.
+  5. Range searches can be done efficiently with BSTs, but hash tables can also support efficient range searches if implemented properly with techniques such as linear probing or chaining.
+  6. BST are memory efficient but Hash table is not.
+  7. BST does not require a load factor to be maintained as in Hash tables.
+  8. BST can support multiple keys with the same value, whereas Hash tables use the key to identify unique elements and cannot have multiple keys with the same value.
+  9. BST have a lower overhead in terms of memory and computational complexity, whereas Hash tables require additional memory to store hash values and handle collisions.
+  10. BST performs well on small data sets with a small number of elements, whereas Hash tables are not highly suitable for small data sets with a few elements.
+  11. BST allows for recursion, which can be used to solve problems more elegantly and efficiently. Hash tables do not allow for recursion.
+  12. BST can be easily merged by using a different data structure such as a B+ tree, whereas Hash tables do not have a straightforward method for merging.
+  
+  
 <br/>
 
 ## 2.4. (Binary) Heap
