@@ -11,9 +11,11 @@
 <br/>
 
 ## 1.2. Graphic Representation
-<img alt="" src="https://builtin.com/sites/www.builtin.com/files/inline-images/2_tree-traversal.gif" style="width: 370px;" />
 
 [Source](https://builtin.com/software-engineering-perspectives/tree-traversal)
+
+<img alt="" src="https://builtin.com/sites/www.builtin.com/files/inline-images/2_tree-traversal.gif" style="width: 370px;" />
+
 
 <br/>
 
