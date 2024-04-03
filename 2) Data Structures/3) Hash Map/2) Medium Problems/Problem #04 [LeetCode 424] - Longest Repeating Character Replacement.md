@@ -1,1 +1,0 @@
-<a href="https://github.com/alvarosf07/computer-science-DSA/blob/master/1)%20Abstract%20Data%20Types/3)%20String/2)%20Medium%20Problems/Problem%20%232%20%5BLeetCode%200424%5D%20-%20Longest%20Repeating%20Character%20Replacement.md">1) Abstract Data Types / 3) String / 2) Medium Problems / Problem #2 [LeetCode 424] - Longest Repeating Character Replacement K</a>
