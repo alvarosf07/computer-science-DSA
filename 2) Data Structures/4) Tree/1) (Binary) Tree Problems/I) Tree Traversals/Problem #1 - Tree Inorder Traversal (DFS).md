@@ -1,4 +1,7 @@
 # 1. Tree Inorder Traversal
+
+<br/>
+
 ## 1.1. Algorithm
 
 1. Traverse the left subtree, i.e., call Inorder(left->subtree)
