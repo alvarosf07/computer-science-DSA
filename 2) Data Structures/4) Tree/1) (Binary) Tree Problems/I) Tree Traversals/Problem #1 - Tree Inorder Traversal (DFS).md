@@ -1,5 +1,5 @@
-# Tree Inorder Traversal
-## Algorithm
+# 1. Tree Inorder Traversal
+## 1.1. Algorithm
 
 1. Traverse the left subtree, i.e., call Inorder(left->subtree)
 1. Visit the root.
@@ -7,14 +7,14 @@
 
 <br/>
 
-## Graphic Representation
+## 1.2. Graphic Representation
 <img alt="" src="https://builtin.com/sites/www.builtin.com/files/inline-images/2_tree-traversal.gif" style="width: 370px;" />
 
 [Source](https://builtin.com/software-engineering-perspectives/tree-traversal)
 
 <br/>
 
-## Code
+## 1.3. Code
 ```python
 # Python3 program to for tree traversals
 
