@@ -1,4 +1,5 @@
-# [LeetCode 149 - Max Points on a Line](https://leetcode.com/problems/max-points-on-a-line)
+# [LeetCode 149 - Max Points on a Line](https://leetcode.com/problems/max-points-on-a-line)      ${\textsf{\color{WildStrawberry} [Hard] }}$
+
 
 
 ## Description
