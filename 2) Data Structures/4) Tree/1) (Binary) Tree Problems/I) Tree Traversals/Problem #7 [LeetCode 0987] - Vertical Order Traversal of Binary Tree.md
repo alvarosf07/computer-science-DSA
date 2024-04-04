@@ -1,4 +1,4 @@
-# 4. Vertical Order Traversal
+# 7. Vertical Order Traversal
 
 # [LeetCode 314 - Binary Tree Vertical Order Traversal](https://leetcode.com/problems/binary-tree-vertical-order-traversal)
 
