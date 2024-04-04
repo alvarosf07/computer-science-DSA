@@ -2,14 +2,14 @@
 
 <br/>
 
-## 1.1. Algorithm
+## 2.1. Algorithm
 1. Visit the root.
 2. Traverse the left subtree, i.e., call Preorder(left->subtree)
 3. Traverse the right subtree, i.e., call Preorder(right->subtree) 
 
 <br/>
 
-## 1.2. Graphic Representation
+## 2.2. Graphic Representation
 
 [Source](https://builtin.com/software-engineering-perspectives/tree-traversal)
 
@@ -18,7 +18,7 @@
 
 <br/>
 
-## 1.3. Code
+## 2.3. Code
 ```python
 # Python3 program to for tree traversals
  
