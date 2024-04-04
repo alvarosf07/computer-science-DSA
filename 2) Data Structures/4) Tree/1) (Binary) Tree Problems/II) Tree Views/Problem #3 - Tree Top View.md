@@ -27,10 +27,6 @@ The main approach to solve the top view problem is to follow a similar strategy 
 # view of binary tree
 
 # Binary Tree Node
-""" utility that allocates a newNode 
-with the given key """
-
-
 class newNode:
 
 	# Construct to create a newNode
