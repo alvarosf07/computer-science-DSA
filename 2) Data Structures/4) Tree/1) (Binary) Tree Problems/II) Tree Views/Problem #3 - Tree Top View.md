@@ -1,165 +1,110 @@
 
-# 1. Tree Right View
-The right view of a (Binary) Tree is a set of nodes visible when the tree is visited from the Right side.
+# 3. Tree Left View
+The top view of a (Binary) Tree is a set of nodes visible when the tree is visited from the top.
 
 <br/>
 
-## 1.1. Graphical Representation
+## 3.1. Graphical Representation
 [Source](https://www.geeksforgeeks.org/properties-of-binary-tree/)
 
 <img alt="" src="https://media.geeksforgeeks.org/wp-content/uploads/20230203074235/new-binary-tree.png" style="width: 370px;" />
 
-The right view of the given tree would be:  "2 5 9 4"
+The left view of the given tree would be:  "2 7 2 5 9"
 
 <br/>
 
-## 1.2. Algorithm
-The right view of a tree can be obtained following several algorithms:
-* Right view of a tree via recursion
-* Right view of a tree via BFS 
+## 3.2. Algorithm
+The main approach to solve the top view problem is to follow a similar strategy to the vertical tree traversal, ordering the tree in vertical levels and selecting the uppermost node of every level.
 
 <br/>
 
-## 1.3. Code
-### I) Tree Right View via Recursion
-```
-The idea is to use recursion and keep track of the maximum level also. And traverse the tree in a manner that the right subtree is visited before the left subtree.
-```
+## 3.3. Code
+> The idea is to do something similar to vertical Order Traversal. Like vertical Order Traversal, we need to put nodes of the same horizontal distance together. We do a level order traversal so that the topmost node at a horizontal node is visited before any other node of the same horizontal distance below it. Hashing is used to check if a node at a given horizontal distance is seen or not. 
+
 #### Python code:
 ```python
-# Python program to print right view of Binary Tree
+# Python3 program to print top
+# view of binary tree
 
-# A binary tree node
+# Binary Tree Node
+""" utility that allocates a newNode 
+with the given key """
 
 
-class Node:
-	# A constructor to create a new Binary tree Node
-	def __init__(self, item):
-		self.data = item
+class newNode:
+
+	# Construct to create a newNode
+	def __init__(self, key):
+		self.data = key
 		self.left = None
 		self.right = None
+		self.hd = 0
 
-# Recursive function to print right view of Binary Tree
-# used max_level as reference list ..only max_level[0]
-# is helpful to us
+# function should print the topView
+# of the binary tree
 
 
-def rightViewUtil(root, level, max_level):
+def topview(root):
 
-	# Base Case
-	if root is None:
+	if(root == None):
 		return
+	q = []
+	m = dict()
+	hd = 0
+	root.hd = hd
 
-	# If this is the last node of its level
-	if (max_level[0] < level):
-		print "%d " % (root.data),
-		max_level[0] = level
-
-	# Recur for right subtree first, then left subtree
-	rightViewUtil(root.right, level+1, max_level)
-	rightViewUtil(root.left, level+1, max_level)
-
-
-def rightView(root):
-	max_level = [0]
-	rightViewUtil(root, 1, max_level)
-
-
-# Driver program to test above function
-root = Node(1)
-root.left = Node(2)
-root.right = Node(3)
-root.left.left = Node(4)
-root.left.right = Node(5)
-root.right.left = Node(6)
-root.right.right = Node(7)
-root.right.left.right = Node(8)
-
-rightView(root)
-
-# source: https://www.geeksforgeeks.org/print-right-view-binary-tree-2/
-
-```
-<br/>
-
-### II) Tree Right View via BFS
-```
-The idea is to use Level Order Traversal as the last node every level gives the right view of the binary tree.
-```
-#### Python code:
-```python
-# Python3 program to print right
-# view of Binary Tree
-from collections import deque
-
-# A binary tree node
-
-
-class Node:
-
-	# A constructor to create a new
-	# Binary tree Node
-	def __init__(self, val):
-		self.data = val
-		self.left = None
-		self.right = None
-
-# Function to print Right view of
-# binary tree
-
-
-def rightView(root):
-
-	if root is None:
-		return
-
-	q = deque()
+	# push node and horizontal
+	# distance to queue
 	q.append(root)
 
-	while q:
+	while(len(q)):
+		root = q[0]
+		hd = root.hd
 
-		# Get number of nodes for each level
-		n = len(q)
+		# count function returns 1 if the
+		# container contains an element
+		# whose key is equivalent to hd,
+		# or returns zero otherwise.
+		if hd not in m:
+			m[hd] = root.data
+		if(root.left):
+			root.left.hd = hd - 1
+			q.append(root.left)
 
-		# Traverse all the nodes of the
-		# current level
+		if(root.right):
+			root.right.hd = hd + 1
+			q.append(root.right)
 
-		while n > 0:
-			n -= 1
-
-			# Get the front node in the queue
-			node = q.popleft()
-
-			# Print the last node of each level
-			if n == 0:
-				print(node.data, end=" ")
-
-			# If left child is not null push it
-			# into the queue
-			if node.left:
-				q.append(node.left)
-
-			# If right child is not null push
-			# it into the queue
-			if node.right:
-				q.append(node.right)
-
-# Driver code
+		q.pop(0)
+	for i in sorted(m):
+		print(m[i], end=" ")
 
 
-# Let's construct the tree as
-# shown in example
-root = Node(1)
-root.left = Node(2)
-root.right = Node(3)
-root.left.left = Node(4)
-root.left.right = Node(5)
-root.right.left = Node(6)
-root.right.right = Node(7)
-root.right.left.right = Node(8)
+# Driver Code
+if __name__ == '__main__':
 
-rightView(root)
+	""" Create following Binary Tree
+		 1
+		/ \
+               2   3
+                \
+                 4
+                  \
+                   5
+                     \
+                       6
+	"""
+	root = newNode(1)
+	root.left = newNode(2)
+	root.right = newNode(3)
+	root.left.right = newNode(4)
+	root.left.right.right = newNode(5)
+	root.left.right.right.right = newNode(6)
+	print("The top view of the tree is: ")  # Output: 2 1 3 6
+	topview(root)
 
-# source: https://www.geeksforgeeks.org/print-right-view-binary-tree-2/
 
-````
+# source: https://www.geeksforgeeks.org/print-nodes-top-view-binary-tree/
+
+```
+<br/>
