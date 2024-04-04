@@ -21,9 +21,8 @@ The right view of a tree can be obtained following several algorithms:
 
 ## 1.3. Code
 ### I) Tree Right View via Recursion
-```
-The idea is to use recursion and keep track of the maximum level also. And traverse the tree in a manner that the right subtree is visited before the left subtree.
-```
+> The idea is to use recursion and keep track of the maximum level also. And traverse the tree in a manner that the right subtree is visited before the left subtree.
+
 #### Python code:
 ```python
 # Python program to print right view of Binary Tree
@@ -82,9 +81,8 @@ rightView(root)
 <br/>
 
 ### II) Tree Right View via BFS
-```
-The idea is to use Level Order Traversal as the last node every level gives the right view of the binary tree.
-```
+> The idea is to use Level Order Traversal as the last node every level gives the right view of the binary tree.
+
 #### Python code:
 ```python
 # Python3 program to print right
