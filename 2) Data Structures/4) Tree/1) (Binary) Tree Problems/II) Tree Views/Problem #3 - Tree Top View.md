@@ -1,5 +1,5 @@
 
-# 3. Tree Left View
+# 3. Tree Top View
 The top view of a (Binary) Tree is a set of nodes visible when the tree is visited from the top.
 
 <br/>
@@ -9,7 +9,7 @@ The top view of a (Binary) Tree is a set of nodes visible when the tree is visit
 
 <img alt="" src="https://media.geeksforgeeks.org/wp-content/uploads/20230203074235/new-binary-tree.png" style="width: 370px;" />
 
-The left view of the given tree would be:  "2 7 2 5 9"
+The top view of the given tree would be:  "2 7 2 5 9"
 
 <br/>
 
