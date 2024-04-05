@@ -183,14 +183,12 @@ def printBottomViewUtil(root, d, hd, level):
 	# recur for left subtree by decreasing
 	# horizontal distance and increasing
 	# level by 1
-	printBottomViewUtil(root.left, d, hd - 1, 
-								level + 1)
+	printBottomViewUtil(root.left, d, hd - 1, level + 1)
 	
 	# recur for right subtree by increasing
 	# horizontal distance and increasing 
 	# level by 1
-	printBottomViewUtil(root.right, d, hd + 1, 
-									level + 1)
+	printBottomViewUtil(root.right, d, hd + 1, level + 1)
 
 # Driver Code 
 if __name__ == '__main__':
