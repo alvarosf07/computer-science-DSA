@@ -194,3 +194,5 @@ public:
 };
 
 ```
+
+Source of solutions: [LeetCode Answer](https://leetcode.com/problems/kth-smallest-element-in-a-bst/solutions/3469071/i-bet-you-will-understand-brute-better-optimal-beginner-friendly-c/)
