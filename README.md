@@ -1,6 +1,6 @@
-# Data Structures and Algorithms - Optimized Problem Collection (DSA-OPC)
+# Data Structures & Algorithms - Optimized Problem Collection (DSA-OPC)
 
-Welcome to the Data Structures and Algorithms Optimized Problem Collection!
+Welcome to the Data Structures & Algorithms Optimized Problem Collection!
 
 This repository houses my personal structured and curated collection of the most relevant DSA problems, extracted from reputable sources like LeetCode, HackerRank, Elements of Programming Interviews...
 
