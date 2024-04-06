@@ -70,7 +70,7 @@ There can be several types of trees, depending on different factors:
 
   * Trees by Number of Nodes:
     * Binary Tree
-    * (Non-Binary) Tree
+    * Generic Tree
   
   * Trees by Sorting Mechanism:
     * (Binary) Search Tree (BST)
@@ -83,7 +83,7 @@ Special type of tree where each parent node can have at most 2 children.
 
 <br/>
 
-## 2.2. (Non-Binary) Tree 
+## 2.2. Generic Tree 
 Tree that is not a binary tree (at least one node has more than 2 children).
 
 <br/>
