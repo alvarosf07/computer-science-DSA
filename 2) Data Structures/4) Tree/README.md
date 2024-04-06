@@ -73,8 +73,8 @@ There can be several types of trees, depending on different factors:
     * Generic Tree
   
   * Trees by Sorting Mechanism:
-    * (Binary) Search Tree (BST)
-    * (Binary) Heap
+    * Binary Search Tree (BST) (horizontal sorting)
+    * (Binary) Heap (vertical sorting)
 
 <br/>
 
