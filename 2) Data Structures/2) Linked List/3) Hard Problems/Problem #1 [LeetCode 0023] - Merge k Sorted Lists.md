@@ -1,5 +1,5 @@
 
-# [LeetCode 61 - Rotate List](https://leetcode.com/problems/rotate-list/description/)
+# [LeetCode 23 - Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists)
 
 
 ## Description
@@ -88,7 +88,7 @@ class Solution {
 
 <br/>
 
-## Solution 2 - Merge Sort
+## Solution 2 - Merge Sort (Divide & Conquer) (Recursion)
 #### ➤ Python:
 ``` python
 class Solution {
