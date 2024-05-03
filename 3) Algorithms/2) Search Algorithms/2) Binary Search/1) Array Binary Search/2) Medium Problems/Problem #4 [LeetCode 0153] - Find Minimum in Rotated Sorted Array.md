@@ -1,0 +1,2 @@
+<a href="https://github.com/alvarosf07/computer-science-DSA/blob/master/2)%20Data%20Structures/1)%20Array/2)%20Medium%20Problems/2.3)%20Array%20Rotations/Problem%20%2312%20%5BLeetCode%200153%5D%20%20-%20Find%20Minimum%20in%20Rotated%20Sorted%20Array.md">
+2) Data Structures / 1) Array / 2) Medium Problems / 2.3) Array Rotations / Problem #12 [LeetCode 0153] - Find Minimum in Rotated Sorted Array.md </a>
