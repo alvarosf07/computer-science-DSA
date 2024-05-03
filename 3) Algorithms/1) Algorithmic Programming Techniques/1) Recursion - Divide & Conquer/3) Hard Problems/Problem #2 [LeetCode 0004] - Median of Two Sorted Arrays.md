@@ -1,2 +1,2 @@
-<a href="https://github.com/alvarosf07/computer-science-DSA/blob/master/3)%20Algorithms/2)%20Search%20Algorithms/2)%20Binary%20Search/1)%20Array%20Binary%20Search/3)%20Hard%20Problems/Problem%20%231%20%5BLeetCode%200004%5D%20-%20Median%20of%20Two%20Sorted%20Arrays.md"> 
+## <a href="https://github.com/alvarosf07/computer-science-DSA/blob/master/3)%20Algorithms/2)%20Search%20Algorithms/2)%20Binary%20Search/1)%20Array%20Binary%20Search/3)%20Hard%20Problems/Problem%20%231%20%5BLeetCode%200004%5D%20-%20Median%20of%20Two%20Sorted%20Arrays.md"> 
 3) Algorithms / 2) Search Algorithms / 2) Binary Search / 1) Array Binary Search / 3) Hard Problems / Problem #1 [LeetCode 0004] - Median of Two Sorted Arrays.md </a>
