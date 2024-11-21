@@ -1,4 +1,4 @@
-# Data Structures & Algorithms - Optimized Problem Collection (DSA-OPC)
+# ``DSA-OPC`` - Data Structures & Algorithms - Optimized Problem Collection
 
 Welcome to the Data Structures & Algorithms Optimized Problem Collection!
 
