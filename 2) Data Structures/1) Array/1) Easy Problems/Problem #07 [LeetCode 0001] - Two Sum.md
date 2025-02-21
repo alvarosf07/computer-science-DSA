@@ -37,7 +37,7 @@ You can return the answer in any order. </p>
 
 ## Solutions
 
-### Solution 1: Beats 100% in running time
+### Solution 1: Hash Table (beats 100% in running time)
 
 The key to solve this problem is realizing that for every number in the array, we don't need to check every other number looking for the one that adds up to the target. Instead, we simply iterate through each number `x` in the array and check if we have already seen a number which equals `target`-`x`. If so, we return the indexes of both; if not, we save the current number in a hash map (adding its index as value) and continue iterating.
 
