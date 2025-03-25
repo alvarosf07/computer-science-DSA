@@ -54,6 +54,34 @@ It can be shown that the maximum profit you can make is 0.
 
 ## Solutions
 
+### Solution 0 (Naive Solution)
+The force brute approach simply aims to generate all possible combinations of portfolios (`portfolios`), and select the one with the hightest profit. We only add to `portfolios` those `new_portfolio` which are within the budget limit, to eliminate useless combinations.
+
+<!-- tabs:start -->
+
+#### Python:
+```python
+class Solution:
+    def max_profit (present, future, budget):
+	portfolios = [[]]
+	max_profit = 0
+	
+	for i in range(len(present)):
+		for j in range(len(portfolios)):
+		    new_portfolio = portfolios[j]+[i]
+		    cost_portfolio = 0
+		    profit_portfolio = 0
+		    for e in new_portfolio:
+			cost_portfolio += present[e]
+			profit_portfolio += future[e] - present[e]
+		    if cost_portfolio <= budget:
+			max_profit = max(max_profit, profit_portfolio)
+			portfolios += [new_portfolio]
+	return max_profit
+```
+
+<br/>
+
 ### Solution 1
 
 <!-- tabs:start -->
