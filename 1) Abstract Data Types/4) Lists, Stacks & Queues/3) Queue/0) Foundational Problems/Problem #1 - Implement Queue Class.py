@@ -27,7 +27,7 @@ class Queue:
 
   def dequeue(self,val):
     if self.queue:
-      self.queue.popleft() # queue library allows efficient pops from end of the queue
+      self.queue.popleft() # deque library allows efficient pops from the beginning of the queue
     raise IndexError("Dequeue from an empty queue")
 
   def size(self):
