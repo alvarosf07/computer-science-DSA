@@ -54,3 +54,4 @@ class MyStack:
     def empty(self) -> bool:
         return len(self._deque) == 0
 
+
