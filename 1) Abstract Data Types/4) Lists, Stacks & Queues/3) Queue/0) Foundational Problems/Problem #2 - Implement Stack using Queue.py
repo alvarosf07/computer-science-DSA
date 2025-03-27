@@ -1,5 +1,40 @@
 # https://leetcode.com/problems/implement-stack-using-queues/
 
+# Solution #1 - Implement Stack Using 2 Queues (python lists)
+class MyStack:
+
+    def __init__(self):
+        self.queue1 = []
+        self.queue2 = []
+
+    def push(self, x: int) -> None:
+        if self.queue1:
+            self.queue2.append(self.queue1.pop())
+        self.queue1.append(x)
+
+    def pop(self) -> int:
+        if self.queue1:
+            val = self.queue1.pop()
+        if self.queue2:
+            self.queue1.append(self.queue2.pop())
+        return val
+
+    def top(self) -> int:
+        if self.queue1:
+            return self.queue1[0]
+        else:
+            return null
+
+    def empty(self) -> bool:
+        if self.queue1:
+            return False
+        else:
+            return True
+
+
+
+
+# Solution #2 - Implement Stack Using collections.deque() Queue
 class MyStack:
 
     def __init__(self):
